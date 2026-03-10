@@ -1,0 +1,420 @@
+/* BASE */
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  font-family:'Poppins', sans-serif;
+  background:#fff8f5;
+  color:#1f2937;
+}
+
+/* NAVBAR */
+.navbar {
+  background:white;
+  border-bottom:2px solid #fcd34d; /* bright accent */
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+nav a {
+  margin-left:24px;
+  text-decoration:none;
+  color:#1f2937;
+  font-weight:500;
+}
+
+nav a:hover {
+  color:#f97316; /* orange accent on hover */
+}
+
+/* HERO */
+/* Hero Section with Background Image */
+.hero {
+  position: relative;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('../images/vf-hero-bg.png') center/cover no-repeat;
+  color: white;
+  padding: 0 20px;
+}
+
+/* Overlay to improve text readability */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35); /* semi-transparent black overlay */
+  z-index: 1;
+}
+
+/* Hero content sits above overlay */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* Button stays the same */
+.btn-primary {
+  background:white;
+  color:#ef4444;
+  padding:16px 32px;
+  border-radius:40px;
+  font-weight:600;
+  text-decoration:none;
+  transition:0.25s;
+}
+
+.btn-primary:hover {
+  background:#fef3f2;
+  transform:translateY(-2px);
+  box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+/*.hero {
+  height:75vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:linear-gradient(135deg,#f87171,#fbbf24);
+  color:white;
+  padding:0 20px;
+}
+
+.hero-content h1 {
+  font-size:48px;
+  font-weight:700;
+  margin-bottom:15px;
+}
+
+.hero-content p {
+  font-size:20px;
+  margin-bottom:30px;
+}
+
+.btn-primary {
+  background:white;
+  color:#ef4444;
+  padding:16px 32px;
+  border-radius:40px;
+  font-weight:600;
+  text-decoration:none;
+  transition:0.25s;
+}
+
+.btn-primary:hover {
+  background:#fef3f2;
+  transform:translateY(-2px);
+  box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}*/
+
+/* SOCIAL MEDIA */
+.social-media {
+  text-align:center;
+  margin:40px 0;
+}
+
+.social-icon {
+  margin:0 12px;
+  text-decoration:none;
+  color:#ef4444;
+  font-weight:600;
+  transition:0.2s;
+}
+
+.social-icon:hover {
+  color:#f97316;
+}
+
+/* LOCATION */
+.location-preview {
+  text-align:center;
+  padding:40px 20px;
+}
+
+.location-preview h2 {
+  font-size:28px;
+  margin-bottom:12px;
+  color:#10b981; /* green smoothie accent */
+}
+
+/* FOOTER */
+footer {
+  text-align:center;
+  padding:30px;
+  background:#1f2937;
+  color:white;
+}
+
+/* Navbar Logo */
+.logo {
+  font-family: 'Pacifico', cursive; /* changed from Poppins */
+  font-size: 26px;
+  font-weight: normal; /* optional, Pacifico looks best without heavy weight */
+  color: #ef4444; /* keep your smoothie red */
+  display: flex;
+  align-items: center;
+}
+
+.logo:hover {
+  color: #f97316; /* bright orange on hover */
+  transform: scale(1.05);
+  transition: 0.25s;
+}
+
+/* Navbar Container */
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column; /* logo on top, nav below */
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-family: 'Pacifico', cursive; /* cooler font */
+  font-size: 28px;
+  color: #ef4444; /* smoothie red */
+  text-align: center;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+/* Nav below logo */
+.nav-below {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap; /* wraps on smaller screens */
+}
+
+.nav-below a {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+.nav-below a:hover {
+  color: #f97316; /* orange hover */
+  transform: scale(1.05);
+}
+
+/* Optional: add a subtle underline hover effect */
+.nav-below a::after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: #f97316;
+  transition: width 0.3s;
+}
+
+.nav-below a:hover::after {
+  width: 100%;
+}
+
+/* Social Media Section */
+.social-media {
+  text-align: center;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Social Icon Buttons */
+/*
+.social-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #ef4444;
+  font-size: 24px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.social-icon.instagram:hover {
+  background: #E1306C;
+  color: white;
+}
+
+.social-icon.tiktok:hover {
+  background: #010101;
+  color: #00f2ea;
+}
+
+.social-icon.facebook:hover {
+  background: #1877F2;
+  color: white;
+}
+
+
+.social-footer {
+  text-align: center;
+  margin: 60px 0 40px 0;
+}
+
+.social-footer h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  color: #ef4444;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.15);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.social-icons a.instagram:hover { background: #E1306C; color: white; }
+.social-icons a.tiktok:hover { background: #010101; color: #00f2ea; }
+.social-icons a.facebook:hover { background: #1877F2; color: white; }
+.social-icons a.youtube:hover { background: #FF0000; color: white; }
+.social-icons a.pinterest:hover { background: #E60023; color: white; }*/
+
+/* Social Icon Circles */
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hover colors for each platform */
+.social-icons a.instagram:hover { background: #E1306C; }
+.social-icons a.tiktok:hover { background: #010101; }
+.social-icons a.facebook:hover { background: #1877F2; }
+
+.social-footer {
+  text-align: center;       /* centers the header */
+  margin: 60px 0 40px 0;
+}
+
+.social-footer h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+/* flex container for icons */
+.social-icons {
+  display: flex;            /* make icons a row */
+  justify-content: center;  /* center them horizontally */
+  gap: 18px;                /* spacing between icons */
+  flex-wrap: wrap;          /* wrap on smaller screens */
+}
+
+.location-hours {
+  text-align: center;
+  margin: 50px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #1f2937;
+}
+
+.location-hours h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.location-hours .address {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #4b5563;
+}
+
+.hours-table {
+  margin: 0 auto; /* center table */
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.hours-table td {
+  padding: 8px 20px;
+  text-align: left;
+  color: #1f2937;
+}
+
+.hours-table tr:nth-child(even) td {
+  background: #f3f4f6; /* subtle stripe for readability */
+}
+
+.hours-table tr td:first-child {
+  font-weight: 500;
+  width: 120px;
+}
+
+.hours-table tr td:last-child {
+  text-align: right;
+  font-weight: 400;
+}
