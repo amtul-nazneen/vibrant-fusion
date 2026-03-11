@@ -922,3 +922,91 @@ cursor: pointer;
 flex-direction: column;
     }
   }
+
+  /* Mobile navbar buttons */
+.mobile-navbar-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Hide these on desktop */
+@media (min-width: 769px) {
+  .mobile-navbar-buttons {
+    display: none;
+  }
+}
+
+/* Show on mobile */
+@media (max-width: 768px) {
+  .mobile-navbar-buttons {
+    display: flex;
+  }
+
+  /* Adjust order dropdown for mobile if needed */
+  .order-dropdown .order-btn {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Mobile Navbar Buttons - remove default link styling */
+.mobile-navbar-buttons a,
+.mobile-navbar-buttons .order-btn {
+  text-decoration: none;      /* remove underline */
+  color: #333;                /* same as desktop links */
+  font-weight: 500;           /* same weight as desktop */
+  background: none;           /* remove default button styling if needed */
+  border: none;               /* remove borders */
+  padding: 0;                 /* adjust spacing if needed */
+  cursor: pointer;
+  font-size: 1rem;            /* same as desktop link */
+  display: flex;
+  align-items: center;
+}
+
+/* Hover effect like desktop */
+.mobile-navbar-buttons a:hover,
+.mobile-navbar-buttons .order-btn:hover {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+/* Remove default link styling for the logo text */
+.logo a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+/* If mobile logo text inherits link color, ensure it matches desktop */
+@media (max-width: 768px) {
+  .logo a {
+    color: #333;
+  }
+}
+
+/* Ensure mobile order button matches desktop completely */
+.mobile-navbar-buttons .order-btn {
+  background: #ff6600;       /* exact desktop orange */
+  color: #fff;               /* white text */
+  border: none;              /* remove any borders */
+  border-radius: 5px;        /* same rounding as desktop */
+  padding: 8px 12px;         /* match desktop */
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;                  /* space for icon if any */
+  font-size: 1rem;           /* same as desktop */
+  text-decoration: none;     /* no underline */
+}
+
+/* Hover state exactly like desktop */
+.mobile-navbar-buttons .order-btn:hover {
+  background: #e65c00;       /* exact hover color as desktop */
+  color: #fff;               /* text stays white */
+}

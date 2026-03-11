@@ -6,41 +6,39 @@ hamburger.addEventListener('click', () => {
   mobileMenu.classList.toggle('show');
 });
 
-const orderBtn = document.getElementById("orderButton");
-const orderMenu = document.getElementById("orderMenu");
-orderButton.addEventListener('click', () => {
+// Desktop Order Online
+const orderButton = document.getElementById('orderButton');
+const orderMenu = document.getElementById('orderMenu');
+
+// Mobile Order Online
+const orderButtonMobile = document.querySelector('.order-btn-mobile');
+const orderMenuMobile = document.getElementById('orderMenuMobile');
+
+// Toggle desktop dropdown
+orderButton.addEventListener('click', (e) => {
+  e.stopPropagation();
   orderMenu.style.display = orderMenu.style.display === 'flex' ? 'none' : 'flex';
 });
 
-// const floatingBtn = document.getElementById("floatingBtn");
-// const floatingMenu = document.getElementById("floatingMenu");
-//
-// floatingBtn.addEventListener("click", () => {
-//   floatingMenu.style.display =
-//     floatingMenu.style.display === "block" ? "none" : "block";
-// });
-//
-// window.onclick = function(e){
-//
-//   if(!e.target.matches('.order-btn')){
-//     orderMenu.style.display = "none";
-//   }
-//
-//   if(!e.target.matches('.floating-btn')){
-//     floatingMenu.style.display = "none";
-//   }
-//
-// }
+// Toggle mobile dropdown
+orderButtonMobile.addEventListener('click', (e) => {
+  e.stopPropagation();
+  orderMenuMobile.style.display = orderMenuMobile.style.display === 'flex' ? 'none' : 'flex';
+});
 
-// Close dropdown if clicked outside
-// Close both menus if click happens outside
+// Close menus if clicking outside
 window.addEventListener('click', (e) => {
-  // Close order menu if click is outside
+  // Desktop dropdown
   if (!orderButton.contains(e.target) && !orderMenu.contains(e.target)) {
     orderMenu.style.display = 'none';
   }
 
-  // Close mobile menu if click is outside
+  // Mobile dropdown
+  if (!orderButtonMobile.contains(e.target) && !orderMenuMobile.contains(e.target)) {
+    orderMenuMobile.style.display = 'none';
+  }
+
+  // Mobile menu overlay
   if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
     mobileMenu.classList.remove('show');
   }
