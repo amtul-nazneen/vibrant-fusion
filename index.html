@@ -83,9 +83,25 @@
   <div class="hero-content">
     <h1>Fuel Your Day with Vibrant Flavor</h1>
     <p>Fresh smoothies, açaí bowls, and protein shakes crafted for a healthier lifestyle.</p>
+
     <a href="menu.html" class="hero-button">
-  View Menu <span class="arrow">→</span>
-</a>
+      View Menu <span class="arrow">→</span>
+    </a>
+
+    <!-- Google Reviews Badge -->
+    <a href="https://search.google.com/local/reviews?placeid=ChIJ-Q8ORmGpD4gRzUSldM9u1Vg"
+       target="_blank"
+       class="google-badge"
+       id="google-badge">
+
+      <div class="badge-stars">★★★★★</div>
+      <div class="badge-text">
+        <span id="badge-rating">4.9</span> Google Rating •
+        <span id="badge-count">294</span> Happy Customers
+      </div>
+
+    </a>
+
   </div>
 </section>
 
@@ -124,38 +140,53 @@
 
     <div class="card">
       <span class="badge popular">Most Popular</span>
-      <img src="images/cf-acai.jpg" alt="Tropical Acai Bowl">
-      <h3>Tropical Açaí Bowl</h3>
+      <img src="images/fi-acai-bowl.jpeg" alt="Tropical Acai Bowl">
+      <h3>Açaí Bowl</h3>
       <p>Organic açaí blended with banana and coconut milk.</p>
       <div class="card-footer">
         <span>$11.50</span>
-        <a href="#" class="order-btn">Order</a>
+        <a href="menu.html" class="order-btn">Order</a>
       </div>
     </div>
 
     <div class="card">
       <span class="badge protein">High Protein</span>
-      <img src="images/cf-protein.jpg" alt="Protein Shake">
-      <h3>Protein Power Shake</h3>
+      <img src="images/fi-protein-oats.jpeg" alt="Protein Shake">
+      <h3>Protein Oats</h3>
       <p>Banana, almond milk, peanut butter and whey protein.</p>
       <div class="card-footer">
         <span>$9.25</span>
-        <a href="#" class="order-btn">Order</a>
+        <a href="menu.html" class="order-btn">Order</a>
       </div>
     </div>
 
     <div class="card">
       <span class="badge trending">Trending</span>
-      <img src="images/cf-acai.jpg" alt="Mango Smoothie">
-      <h3>Mango Sunrise Smoothie</h3>
+      <img src="images/fi-sb-twist.jpeg" alt="Mango Smoothie">
+      <h3>Strawberry Banana Twist</h3>
       <p>Mango, pineapple, orange juice and coconut water.</p>
       <div class="card-footer">
         <span>$8.75</span>
-        <a href="#" class="order-btn">Order</a>
+        <a href="menu.html" class="order-btn">Order</a>
       </div>
     </div>
 
   </div>
+</section>
+
+<section class="reviews-section">
+  <h2>What Our Customers Say</h2>
+
+  <div class="reviews-slider">
+
+    <button class="slider-btn prev">‹</button>
+
+    <div class="reviews-track" id="reviews-track"></div>
+
+    <button class="slider-btn next">›</button>
+
+  </div>
+
 </section>
 
 <section class="visit-section">
@@ -217,6 +248,22 @@
     </a>
   </div>
 </div>
+<div class="review-cta">
+
+  <h3>Love our bowls? ❤️</h3>
+
+  <p>
+    If you enjoyed your visit, we'd love to hear your feedback.
+    Your review helps others discover Vibrant Fusion.
+  </p>
+
+  <a href="https://g.page/r/Cc1EpXTPbtVYEAE/review"
+     target="_blank"
+     class="review-cta-button">
+     Leave a Google Review
+  </a>
+
+</div>
 
     </div>
 
@@ -235,5 +282,6 @@
   </div>
 </footer>
 <script src="js/script.js"></script>
+<script src="js/reviews.js"></script>
 </body>
 </html>
