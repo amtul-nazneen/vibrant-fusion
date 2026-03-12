@@ -75,9 +75,48 @@
 
 
 
-<section class="menu-placeholder">
-  <h1>Our Menu Coming Soon!</h1>
-</section>
+      <section class="faq-section">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+          <h3>What are your operating hours?</h3>
+          <p>We’re open Thursday–Tuesday from 8 AM–4 PM (Saturday & Sunday 9 AM–3 PM) and closed on Monday.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do you offer vegan or gluten-free options?</h3>
+          <p>Yes! Most of our bowls and smoothies can be customized to be vegan or gluten-free. Just ask our team!</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I place an order online?</h3>
+          <p>Absolutely! You can order directly from our website or visit popular delivery platforms. For large party orders, contact us directly.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do you offer party or catering services?</h3>
+          <p>Yes, we do! Vibrant Fusion can cater for birthdays, events, and gatherings. Reach out via our <a href="contact.html">Contact page</a> to plan your order.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Where are you located?</h3>
+          <p>We’re at 1175 Barrington Rd. Hoffman Estates, IL 60169. <a href="location.html">View our location</a> to get directions easily.</p>
+        </div>
+
+        <div class="faq-links">
+          <p>Have more questions? <a href="contact.html">Contact us</a> or <a href="location.html">visit our store</a>!</p>
+        </div>
+      </section>
+
+      <script>
+        // Simple toggle for FAQ
+        document.querySelectorAll('.faq-item h3').forEach(item => {
+          item.addEventListener('click', () => {
+            item.parentElement.classList.toggle('open');
+          });
+        });
+      </script>
+
 
 <!-- SOCIAL SECTION -->
 

@@ -15,42 +15,137 @@
   <header class="navbar">
     <div class="nav-container">
       <div class="logo">
-        <img src="images/vflogo.jpg" alt="Vibrant Fusion Logo" class="logo-img">
-        Vibrant Fusion
+        <a href="index.html">
+          <img src="images/vflogo.jpeg" alt="Vibrant Fusion Logo" class="logo-img">
+          Vibrant Fusion
+        </a>
       </div>
-      <nav class="nav-below">
-        <a href="index.html">Home</a>
+
+      <!-- Desktop / Tablet Links -->
+      <nav class="nav-links">
         <a href="menu.html">Menu</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
         <a href="location.html">Location</a>
+        <a href="about.html">About</a>
+        <div class="order-dropdown">
+          <button class="order-btn" id="orderButton">Order Online ▾</button>
+          <div class="order-menu" id="orderMenu">
+            <a href="tel:+16305551234">📞 Pickup (Call)</a>
+            <a href="https://www.doordash.com/">
+              <img src="images/dd-logo.svg" class="platform-logo"> Order on DoorDash
+            </a>
+            <a href="https://www.grubhub.com/">
+              <img src="images/gh-logo.svg" class="platform-logo"> Order on Grubhub
+            </a>
+          </div>
+        </div>
       </nav>
+
+      <div class="mobile-navbar-buttons">
+        <a href="menu.html" class="menu-mobile">Menu</a>
+        <div class="order-dropdown">
+          <button class="order-btn order-btn-mobile">Order Online ▾</button>
+          <div class="order-menu" id="orderMenuMobile">
+            <a href="tel:+16305551234">📞 Pickup (Call)</a>
+            <a href="https://www.doordash.com/">
+              <img src="images/dd-logo.svg" class="platform-logo"> Order on DoorDash
+            </a>
+            <a href="https://www.grubhub.com/">
+              <img src="images/gh-logo.svg" class="platform-logo"> Order on Grubhub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="location.html">Location</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
     </div>
   </header>
 
-<section class="menu-placeholder">
-  <h1>About us</h1>
-</section>
 
-<!-- SOCIAL MEDIA -->
-<section class="social-footer">
-  <h3>Follow Us</h3>
-  <div class="social-icons">
-    <a href="#" target="_blank" class="instagram">
-      <img src="images/instagram.svg" alt="Instagram">
-    </a>
-    <a href="#" target="_blank" class="tiktok">
-      <img src="images/tiktok.svg" alt="TikTok">
-    </a>
-    <a href="#" target="_blank" class="facebook">
-      <img src="images/facebook.svg" alt="Facebook">
-    </a>
+  <section class="about-section" style="max-width:1000px; margin:50px auto; display:flex; flex-wrap:wrap; gap:40px; align-items:center; justify-content:center; text-align:center;">
+
+      <!-- Picture -->
+      <div class="about-image" style="flex:1; min-width:280px;">
+        <img src="images/vf-hero-mobile.jpeg" alt="Vibrant Fusion Smoothie Bowls" style="width:100%; border-radius:16px; box-shadow:0 10px 25px rgba(0,0,0,0.08);">
+      </div>
+
+      <!-- Text -->
+      <div class="about-text" style="flex:1; min-width:280px;">
+    <h1 style="font-family:'Pacifico', cursive; color:#ef4444; font-size:2.5rem; margin-bottom:20px;">Welcome to Vibrant Fusion!</h1>
+    <p style="font-size:1.1rem; color:#1f2937; line-height:1.6;">
+      At Vibrant Fusion, we believe healthy food should be fun, fresh, and full of flavor.
+      Our bowls and smoothies are made with love, bursting with vibrant fruits and wholesome ingredients.
+      Come sip, savor, and brighten your day with us! 🌈🥭🍓
+    </p>
+    <br>
+    <p style="font-size:1.1rem; color:#1f2937; line-height:1.6;">
+      <a href="location.html" style="color:#ef4444; font-weight:600; text-decoration:none; border-bottom:2px solid #ef4444; transition:0.25s;">
+        Visit us at our store
+      </a> to taste the magic in person!
+    </p>
   </div>
+
+    </section>
+
+
+
+<!-- SOCIAL SECTION -->
+
+<section class="follow-us-block">
+
+<h3>Follow Us!</h3>
+
+<div class="social-icons">
+
+<a href="https://www.instagram.com/vibrantfusion" target="_blank" class="instagram">
+<img src="images/instagram.svg" alt="Instagram">
+</a>
+
+<a href="https://www.facebook.com/vibrantfusion1" target="_blank" class="tiktok">
+<img src="images/tiktok.svg" alt="TikTok">
+</a>
+
+<a href="https://www.tiktok.com/@vibrant_fusion" target="_blank" class="facebook">
+<img src="images/facebook.svg" alt="Facebook">
+</a>
+
+</div>
+
 </section>
 
-<footer>
-  <p>© 2026 Vibrant Fusion</p>
+<section class="review-cta">
+  <h3>Love our bowls? ❤️</h3>
+  <p>
+    If you enjoyed your visit, we'd love to hear your feedback.
+    Your review helps others discover Vibrant Fusion.
+  </p>
+  <a href="https://g.page/r/Cc1EpXTPbtVYEAE/review"
+     target="_blank"
+     class="review-cta-button">
+    Leave a Google Review
+  </a>
+</section>
+
+
+<footer class="footer-bar">
+  <div class="footer-container">
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+  </div>
 </footer>
+<script src="js/script.js"></script>
 
 </body>
 </html>
