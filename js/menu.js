@@ -1,12 +1,27 @@
 // ===== GLOBAL VARIABLES =====
-let menuData = null;
-const navbar = document.getElementById('navbar');
-const categoryBar = document.getElementById('categoryBar');
-const navbarHeight = navbar ? navbar.offsetHeight : 0;
+ let menuData = null;
+// const navbar = document.getElementById('navbar');
+// const categoryBar = document.getElementById('categoryBar');
+// const navbarHeight = navbar ? navbar.offsetHeight : 0;
+//
+// // Apply CSS variable for sticky positioning
+// categoryBar.style.setProperty('--navbar-height', navbarHeight + 'px');
+window.addEventListener('DOMContentLoaded', () => {
+  const navbar = document.querySelector('.navbar'); // <-- your header
+  const categoryBar = document.getElementById('categoryBar');
+  const navbarHeight = navbar ? navbar.offsetHeight : 0;
 
-// Apply CSS variable for sticky positioning
-categoryBar.style.setProperty('--navbar-height', navbarHeight + 'px');
+  // Set CSS variable for sticky top
+  categoryBar.style.setProperty('--navbar-height', navbarHeight + 'px');
+});
 
+// Optional: recalc on window resize if navbar height can change
+window.addEventListener('resize', () => {
+  const navbar = document.querySelector('.navbar');
+  const categoryBar = document.getElementById('categoryBar');
+  const navbarHeight = navbar ? navbar.offsetHeight : 0;
+  categoryBar.style.setProperty('--navbar-height', navbarHeight + 'px');
+});
 // ===== FETCH MENU DATA =====
 fetch("../data/menu.json")
   .then(response => response.json())
@@ -128,10 +143,21 @@ function renderMenu(data) {
     });
 
     // ---- SMOOTH SCROLL ON CATEGORY CLICK ----
+    // ---- SMOOTH SCROLL ON CATEGORY CLICK ----
     nav.addEventListener('click', e => {
       e.preventDefault();
+
       const target = document.querySelector(nav.getAttribute('href'));
+
+      // Recalculate heights at click time
+      const navbar = document.querySelector('.navbar');
+      const navbarHeight = navbar ? navbar.offsetHeight : 0;
+
+      const categoryBar = document.getElementById('categoryBar');
+      const categoryBarHeight = categoryBar ? categoryBar.offsetHeight : 0;
+
       const top = target.getBoundingClientRect().top + window.scrollY - navbarHeight - categoryBarHeight;
+
       window.scrollTo({ top, behavior: 'smooth' });
     });
   });
