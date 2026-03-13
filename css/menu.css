@@ -1,62 +1,152 @@
-body{
-font-family: Arial, sans-serif;
+/* body{
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
 margin:40px;
+background:#fafafa;
+color:#222;
+} */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(
+    180deg,
+    #fff7ed 0%,
+    #ffe4e6 40%,
+    #fff 100%
+  );
 }
+
+/* CATEGORY BAR */
 
 .category-bar{
 display:flex;
-gap:15px;
+gap:12px;
 overflow-x:auto;
-margin-bottom:30px;
+padding-bottom:10px;
+margin-bottom:40px;
+border-bottom:1px solid #eee;
+-ms-overflow-style: none;  /* IE & Edge */
+ scrollbar-width: none;     /* Firefox */
+ padding:10px 5px;
 }
-
+.category-bar::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
 .category-bar a{
 text-decoration:none;
-padding:10px 15px;
-background:#f2f2f2;
-border-radius:20px;
-color:black;
+padding:10px 18px;
+background:white;
+border:1px solid #eee;
+border-radius:25px;
+font-size:14px;
+font-weight:500;
+color:#333;
 white-space:nowrap;
+transition:all .2s ease;
 }
 
+.category-bar a:hover{
+background:#f3f3f3;
+}
+
+/* CATEGORY TITLE */
+
 .category-title{
+font-size:26px;
 margin:40px 0 20px 0;
 }
+
+/* GRID */
 
 .menu-grid{
 display:grid;
 grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
-gap:20px;
+gap:24px;
 }
+
+/* CARD */
 
 .menu-card{
-border:1px solid #ddd;
-border-radius:8px;
-padding:15px;
 background:white;
+border-radius:12px;
+border:1px solid #eee;
+padding:18px;
+transition:all .2s ease;
 }
 
+.menu-card:hover{
+box-shadow:0 8px 20px rgba(0,0,0,0.06);
+transform:translateY(-2px);
+}
+
+/* ITEM TITLE */
+
 .item-title{
-font-weight:bold;
+font-size:17px;
+font-weight:600;
 margin-bottom:6px;
 }
 
+/* DESCRIPTION */
+
 .description{
 font-size:14px;
-color:#555;
-margin-bottom:10px;
+color:#666;
+line-height:1.4;
+margin-bottom:12px;
 }
+
+/* PRICE */
 
 .price{
-font-weight:bold;
+font-size:16px;
+font-weight:600;
 }
+
+/* MULTI SIZE */
 
 .size-prices{
-font-weight:bold;
+font-size:15px;
+font-weight:600;
 }
 
+/* POPULAR */
+
 .popular{
-color:orange;
-font-size:13px;
+font-size:12px;
+color:#ff7a00;
 margin-left:6px;
+}
+
+.image-container {
+  width: 100%;
+  height: 180px; /* fixed height for all images */
+  overflow: hidden;
+  border-radius: 12px 12px 0 0; /* round top corners */
+  margin-bottom: 12px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crop nicely */
+  display: block;
+}
+
+@media (max-width:768px){
+  .image-container {
+    height:150px;
+  }
+}
+
+/* Add extra top padding to each section so the heading is fully visible */
+.menu-grid, .category-title {
+  scroll-margin-top: 100px; /* adjust based on nav height */
+}
+
+/* Spacer to push section down when scrolling */
+.category-section::before {
+  content: "";
+  display: block;
+  height: 100px; /* height of your nav */
+  margin-top: -100px; /* negative to offset layout shift */
 }

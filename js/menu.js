@@ -22,7 +22,7 @@ categoryBar.appendChild(nav)
 
 const section = document.createElement("div")
 section.id = categoryId
-
+section.classList.add("category-section")
 section.innerHTML = `
 <h2 class="category-title">${category.icon} ${category.category}</h2>
 <div class="menu-grid"></div>
@@ -62,24 +62,55 @@ priceHTML = `<div class="price">$${item.price.toFixed(2)}</div>`
 
 const popularIcon = item.popularity === 1 ? `<span class="popular">🔥 Popular</span>` : ""
 
+// card.innerHTML = `
+//
+// <div class="item-title">
+// ${item.name} ${popularIcon}
+// </div>
+//
+// <div class="description">
+// ${item.description}
+// </div>
+//
+// ${priceHTML}
+//
+// `
+
 card.innerHTML = `
-
-<div class="item-title">
-${item.name} ${popularIcon}
+<div class="image-container">
+  <img src="${item.image}" alt="${item.name}" loading="lazy">
 </div>
 
-<div class="description">
-${item.description}
+<div class="card-content">
+  <div class="item-title">
+    ${item.name} ${popularIcon}
+  </div>
+
+  <div class="description">
+    ${item.description}
+  </div>
+
+  ${priceHTML}
 </div>
-
-${priceHTML}
-
 `
 
 grid.appendChild(card)
 
 })
 
-})
+});
+
+
+document.querySelectorAll('.category-bar a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    const offset = 100; // nav height
+    window.scrollTo({
+      top: target.offsetTop - offset,
+      behavior: 'smooth'
+    });
+  });
+});
 
 }
