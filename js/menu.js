@@ -32,24 +32,76 @@ fetch("../data/menu.json")
   });
 
 // ===== ACTIVE CATEGORY HIGHLIGHT ON SCROLL =====
+// function setupCategoryHighlight() {
+//   const categoryLinks = document.querySelectorAll('.category-bar a');
+//
+//   window.addEventListener('scroll', () => {
+//     const scrollPos = window.scrollY + navbarHeight + categoryBar.offsetHeight + 5;
+//
+//     menuData.menu.forEach(category => {
+//       const sectionId = category.category.replace(/\s+/g, '-').toLowerCase();
+//       const section = document.getElementById(sectionId);
+//       const link = document.querySelector(`.category-bar a[href="#${sectionId}"]`);
+//
+//       if (section.offsetTop <= scrollPos && (section.offsetTop + section.offsetHeight) > scrollPos) {
+//         categoryLinks.forEach(l => l.classList.remove('active'));
+//         link.classList.add('active');
+//       }
+//     });
+//   });
+// }
 function setupCategoryHighlight() {
-  const categoryLinks = document.querySelectorAll('.category-bar a');
 
   window.addEventListener('scroll', () => {
-    const scrollPos = window.scrollY + navbarHeight + categoryBar.offsetHeight + 5;
+
+    const navbar = document.querySelector('.navbar');
+    const navbarHeight = navbar ? navbar.offsetHeight : 0;
+
+    const categoryBar = document.getElementById('categoryBar');
+    const categoryBarHeight = categoryBar ? categoryBar.offsetHeight : 0;
+
+    const scrollPos = window.scrollY + navbarHeight + categoryBarHeight + 20;
 
     menuData.menu.forEach(category => {
+
       const sectionId = category.category.replace(/\s+/g, '-').toLowerCase();
       const section = document.getElementById(sectionId);
       const link = document.querySelector(`.category-bar a[href="#${sectionId}"]`);
 
-      if (section.offsetTop <= scrollPos && (section.offsetTop + section.offsetHeight) > scrollPos) {
-        categoryLinks.forEach(l => l.classList.remove('active'));
+      if (!section || !link) return;
+
+      if (
+        section.offsetTop <= scrollPos &&
+        (section.offsetTop + section.offsetHeight) > scrollPos
+      ) {
+
+        document.querySelectorAll('.category-bar a')
+          .forEach(l => l.classList.remove('active'));
+
         link.classList.add('active');
+
+// Auto-scroll category bar so active pill is visible
+const categoryBar = document.getElementById('categoryBar');
+
+const linkLeft = link.offsetLeft;
+const linkWidth = link.offsetWidth;
+const barWidth = categoryBar.offsetWidth;
+
+const scrollPosition = linkLeft - (barWidth / 2) + (linkWidth / 2);
+
+categoryBar.scrollTo({
+  left: scrollPosition,
+  behavior: 'smooth'
+});
+
       }
+
     });
+
   });
+
 }
+
 
 // ===== RENDER MENU =====
 function renderMenu(data) {
@@ -144,21 +196,48 @@ function renderMenu(data) {
 
     // ---- SMOOTH SCROLL ON CATEGORY CLICK ----
     // ---- SMOOTH SCROLL ON CATEGORY CLICK ----
+    // nav.addEventListener('click', e => {
+    //   e.preventDefault();
+    //
+    //   const target = document.querySelector(nav.getAttribute('href'));
+    //
+    //   // Recalculate heights at click time
+    //   const navbar = document.querySelector('.navbar');
+    //   const navbarHeight = navbar ? navbar.offsetHeight : 0;
+    //
+    //   const categoryBar = document.getElementById('categoryBar');
+    //   const categoryBarHeight = categoryBar ? categoryBar.offsetHeight : 0;
+    //
+    //   const top = target.getBoundingClientRect().top + window.scrollY - navbarHeight - categoryBarHeight;
+    //
+    //   window.scrollTo({ top, behavior: 'smooth' });
+    // });
+
     nav.addEventListener('click', e => {
-      e.preventDefault();
+  e.preventDefault();
 
-      const target = document.querySelector(nav.getAttribute('href'));
+  // remove active from all pills
+  document.querySelectorAll('.category-bar a').forEach(link => {
+    link.classList.remove('active');
+  });
 
-      // Recalculate heights at click time
-      const navbar = document.querySelector('.navbar');
-      const navbarHeight = navbar ? navbar.offsetHeight : 0;
+  // activate clicked pill
+  nav.classList.add('active');
 
-      const categoryBar = document.getElementById('categoryBar');
-      const categoryBarHeight = categoryBar ? categoryBar.offsetHeight : 0;
+  const target = document.querySelector(nav.getAttribute('href'));
 
-      const top = target.getBoundingClientRect().top + window.scrollY - navbarHeight - categoryBarHeight;
+  const navbar = document.querySelector('.navbar');
+  const navbarHeight = navbar ? navbar.offsetHeight : 0;
 
-      window.scrollTo({ top, behavior: 'smooth' });
-    });
+  const categoryBar = document.getElementById('categoryBar');
+  const categoryBarHeight = categoryBar ? categoryBar.offsetHeight : 0;
+
+  const top = target.getBoundingClientRect().top + window.scrollY - navbarHeight - categoryBarHeight;
+
+  window.scrollTo({
+    top,
+    behavior: 'smooth'
+  });
+});
   });
 }

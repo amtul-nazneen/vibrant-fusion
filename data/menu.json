@@ -1,84 +1,13 @@
 {
-  "menu": [
-    {
+  "menu": [{
       "category": "Bowls",
       "icon": "🥣",
-      "items": [
-        {
+      "items": [{
           "name": "Tropical Açaí Bowl",
           "description": "Organic açaí with banana and coconut milk, topped with granola, mango, strawberries, and coconut flakes.",
           "price": 11.50,
           "image": "../menu_images/sample.jpeg",
           "popularity": 3
-        },
-        {
-          "name": "Berry Power Bowl",
-          "description": "Açaí base topped with blueberries, raspberries, strawberries, chia seeds, and honey drizzle.",
-          "price": 12.00,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 2
-        },
-        {
-          "name": "Peanut Butter Bliss Bowl",
-          "description": "Açaí blended with banana, topped with peanut butter, granola, cacao nibs, and honey.",
-          "price": 12.50,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 3
-        },
-        {
-          "name": "Green Energy Bowl",
-          "description": "Açaí blended with spinach and pineapple, topped with kiwi, granola, pumpkin seeds, and coconut flakes.",
-          "price": 11.75,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 1
-        },
-        {
-          "name": "Chocolate Lover’s Açaí Bowl",
-          "description": "Açaí blended with banana and cocoa powder, topped with strawberries, dark chocolate chips, and almond butter.",
-          "price": 12.75,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 2
-        }
-      ]
-    },
-    {
-      "category": "Smoothies",
-      "icon": "🍓",
-      "items": [
-        {
-          "name": "Strawberry Banana Smoothie (20oz)",
-          "description": "Fresh strawberries and bananas blended with yogurt and almond milk.",
-          "price": 7.50,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 3
-        },
-        {
-          "name": "Mango Pineapple Paradise (20oz)",
-          "description": "Mango and pineapple blended with coconut water for a tropical refreshment.",
-          "price": 7.75,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 2
-        },
-        {
-          "name": "Mixed Berry Delight (20oz)",
-          "description": "Blueberries, raspberries, and strawberries blended with orange juice and ice.",
-          "price": 8.00,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 3
-        },
-        {
-          "name": "Green Detox Smoothie (20oz)",
-          "description": "Spinach, apple, pineapple, banana, and coconut water blended for a refreshing green smoothie.",
-          "price": 8.25,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 1
-        },
-        {
-          "name": "Peach Sunshine Smoothie (20oz)",
-          "description": "Juicy peaches blended with banana, orange juice, and yogurt.",
-          "price": 7.75,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 2
         }
       ]
     },
@@ -87,244 +16,151 @@
       "icon": "🥤",
       "items": [
         {
-          "name": "Cucumber Mint Refresher (32oz)",
-          "description": "Cooling cucumber and mint blended with sparkling water.",
-          "price": 6.75,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 2
+          "name": "Sunny Day",
+          "price": 9.99,
+          "description": "Electrolytes, collagen, caffeine free",
+          "popularity": 2,
+          "image": "../menu_images/SunnyDay.png"
         },
         {
-          "name": "Citrus Berry Splash (32oz)",
-          "description": "Oranges, lemons, and berries blended with honey and sparkling water.",
-          "price": 7.00,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 3
+          "name": "Berry Bliss",
+          "price": 9.99,
+          "description": "Wild berry, collagen, probiotic, 85 mg caffeine",
+          "popularity": 2,
+          "image": "../menu_images/BerryBliss.png"
         },
         {
-          "name": "Tropical Lemonade (32oz)",
-          "description": "Pineapple, mango, and lime blended with lemonade.",
-          "price": 6.75,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 2
+          "name": "Captain America",
+          "price": 9.99,
+          "description": "Watermelon, blue blast, electrolytes, 160 mg caffeine",
+          "popularity": 2,
+          "image": "../menu_images/CaptainAmerica.png"
         },
         {
-          "name": "Watermelon Cooler (32oz)",
-          "description": "Fresh watermelon blended with lime and sparkling water.",
-          "price": 7.00,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 1
+          "name": "Cucumber Lemonade",
+          "price": 9.99,
+          "description": "Cucumber, lemonade, probiotic, blood circulation support, 160 mg caffeine",
+          "popularity": 2,
+          "image": "../menu_images/CucumberLemonade.png"
         },
         {
-          "name": "Strawberry Lemon Fizz (32oz)",
-          "description": "Strawberries and lemon blended with sparkling water.",
-          "price": 6.75,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 3
-        }
-      ]
-    },
-    {
-      "category": "Protein shakes",
-      "icon": "💪",
-      "items": [
-        {
-          "name": "Vanilla Whey Power Shake",
-          "description": "Vanilla whey protein blended with banana and almond milk.",
-          "price": {"20oz": 8.50, "32oz": 10.50},
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 3
+          "name": "Aloha Sunset",
+          "price": 9.99,
+          "description": "Pineapple, cherry, electrolytes, 85 mg caffeine",
+          "popularity": 2,
+          "image": "../menu_images/AlohaSunset.png"
         },
         {
-          "name": "Chocolate Muscle Builder",
-          "description": "Chocolate protein powder blended with peanut butter, banana, and oat milk.",
-          "price": {"20oz": 9.00, "32oz": 11.00},
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 3
+          "name": "Digestive",
+          "price": 9.99,
+          "description": "Soft lemonade, probiotic, fiber, 160 mg caffeine",
+          "popularity": 2,
+          "image": "../menu_images/Digestive.png"
         },
         {
-          "name": "Berry Protein Blast",
-          "description": "Mixed berries blended with vanilla protein, Greek yogurt, almond milk, and chia seeds.",
-          "price": {"20oz": 9.25, "32oz": 11.25},
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 2
+          "name": "Hot Girl Summer",
+          "price": 9.99,
+          "description": "Pomegranate, wild berry, orange pineapple, 100 mg caffeine, vitamin C",
+          "popularity": 2,
+          "image": "../menu_images/HotGirlSummer.png"
         },
         {
-          "name": "Coffee Protein Boost",
-          "description": "Cold brew coffee blended with chocolate protein powder, banana, and almond milk.",
-          "price": {"20oz": 9.50, "32oz": 11.50},
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 1
+          "name": "Ruby Tart Splash",
+          "price": 9.99,
+          "description": "Pomegranate, cherry, watermelon, vitamin C, biotin, 160 mg caffeine",
+          "popularity": 2,
+          "image": "../menu_images/RubyTartSplash.png"
         },
         {
-          "name": "Green Protein Shake",
-          "description": "Vanilla protein blended with spinach, pineapple, banana, and coconut water.",
-          "price": {"20oz": 9.25, "32oz": 11.25},
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 2
-        }
-      ]
-    },
-    {
-      "category": "Cheesecake shakes",
-      "icon": "🍰",
-      "items": [
-        {
-          "name": "Strawberry Cheesecake Shake",
-          "description": "Creamy cheesecake blended with strawberries, milk, and vanilla.",
-          "price": {"20oz": 8.50, "32oz": 10.50},
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 3
+          "name": "Immunity",
+          "price": 9.99,
+          "description": "Orange, zinc, vitamin C-D, 100 mg caffeine",
+          "popularity": 2,
+          "image": "../menu_images/Immunity.png"
         },
         {
-          "name": "Chocolate Cheesecake Shake",
-          "description": "Chocolate blended with cheesecake, milk, and chocolate syrup.",
-          "price": {"20oz": 9.00, "32oz": 11.00},
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 2
+          "name": "Cherry On Top",
+          "price": 9.99,
+          "description": "Cherry, collagen, biotin, 80 mg caffeine",
+          "popularity": 2,
+          "image": "../menu_images/CherryOnTop.png"
         },
         {
-          "name": "Blueberry Cheesecake Shake",
-          "description": "Cheesecake blended with fresh blueberries and milk.",
-          "price": {"20oz": 8.75, "32oz": 10.75},
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 2
+          "name": "Beach Days",
+          "price": 9.99,
+          "description": "Electrolytes, green apple, blue blast, 85 mg caffeine",
+          "popularity": 2,
+          "image": "../menu_images/BeachDays.png"
         },
         {
-          "name": "Mango Cheesecake Shake",
-          "description": "Cheesecake blended with mango and milk for a tropical shake.",
-          "price": {"20oz": 8.75, "32oz": 10.75},
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 1
+          "name": "Blue Vibes",
+          "price": 9.99,
+          "description": "Electrolytes, blueberry, blueberry, blue blast, 85 mg caffeine",
+          "popularity": 2,
+          "image": "../menu_images/BlueVibes.png"
         },
         {
-          "name": "Oreo Cheesecake Shake",
-          "description": "Cheesecake blended with Oreo cookies and milk.",
-          "price": {"20oz": 9.25, "32oz": 11.25},
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 3
-        }
-      ]
-    },
-    {
-      "category": "Caffeine free drinks",
-      "icon": "🍵",
-      "items": [
-        {
-          "name": "Herbal Chamomile Tea (32oz)",
-          "description": "Calming chamomile tea served hot or iced.",
-          "price": 4.50,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 2
+          "name": "Pink Flamingo",
+          "price": 9.99,
+          "description": "Strawberry pomegranate, caffeine free, collagen",
+          "popularity": 2,
+          "image": "../menu_images/PinkFlamingo.png"
         },
         {
-          "name": "Peppermint Iced Tea (32oz)",
-          "description": "Refreshing peppermint tea served cold.",
-          "price": 4.75,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 3
+          "name": "Tropical Mango",
+          "price": 9.99,
+          "description": "Mango, caffeine free, 15 g protein",
+          "popularity": 2,
+          "image": "../menu_images/TropicalMango.png"
         },
         {
-          "name": "Ginger Lemon Infusion (32oz)",
-          "description": "Spicy ginger and lemon tea, caffeine-free.",
-          "price": 4.50,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 2
+          "name": "Black Mamba",
+          "price": 9.99,
+          "description": "Blackberry, vitamin C, ginseng root, 160 mg caffeine",
+          "popularity": 2,
+          "image": "../menu_images/BlackMamba.png"
         },
         {
-          "name": "Rooibos Vanilla Latte (32oz)",
-          "description": "Naturally caffeine-free rooibos tea with vanilla syrup and steamed milk.",
-          "price": 5.00,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 1
+          "name": "Trash Can Punch",
+          "price": 9.99,
+          "description": "Blue blast, vitamin C, 160 mg caffeine",
+          "popularity": 2,
+          "image": "../menu_images/TrashCanPunch.png"
         },
         {
-          "name": "Hibiscus Berry Tea (32oz)",
-          "description": "Hibiscus blended with berries for a tart, refreshing drink.",
-          "price": 4.75,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 3
-        }
-      ]
-    },
-    {
-      "category": "Hot coffees",
-      "icon": "☕",
-      "items": [
-        {
-          "name": "Cappuccino (20oz)",
-          "description": "Classic espresso with steamed milk foam.",
-          "price": 4.50,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 3
+          "name": "High Caffeine",
+          "price": 9.99,
+          "description": "19.5 g protein, 150 calories, caffeine free",
+          "popularity": 2,
+          "image": "../menu_images/HighCaffeine.png"
         },
         {
-          "name": "Latte (20oz)",
-          "description": "Espresso with steamed milk.",
-          "price": 4.75,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 3
+          "name": "Red Fusion",
+          "price": 9.99,
+          "description": "Pomegranate watermelon, 85 mg caffeine, vitamin C, vitamin B complex",
+          "popularity": 2,
+          "image": "../menu_images/RedFusion.png"
         },
         {
-          "name": "Mocha (20oz)",
-          "description": "Espresso with chocolate syrup and steamed milk.",
-          "price": 5.00,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 2
+          "name": "Sweet Lime Breeze",
+          "price": 9.99,
+          "description": "Kiwi, lime, mango, probiotic, vitamin C, 160 mg caffeine",
+          "popularity": 2,
+          "image": "../menu_images/SweetLimeBreeze.png"
         },
         {
-          "name": "Americano (20oz)",
-          "description": "Espresso with hot water.",
-          "price": 4.25,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 1
+          "name": "Pineapple Passion",
+          "price": 9.99,
+          "description": "Pineapple, electrolytes, vitamins, 125 mg caffeine",
+          "popularity": 2,
+          "image": "../menu_images/PineapplePassion.png"
         },
         {
-          "name": "Flat White (20oz)",
-          "description": "Espresso with steamed milk, velvety texture.",
-          "price": 4.75,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 2
-        }
-      ]
-    },
-    {
-      "category": "Iced coffees",
-      "icon": "❄️",
-      "items": [
-        {
-          "name": "Iced Latte (32oz)",
-          "description": "Espresso poured over ice with milk.",
-          "price": 4.75,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 3
-        },
-        {
-          "name": "Iced Mocha (32oz)",
-          "description": "Espresso with chocolate syrup and milk over ice.",
-          "price": 5.00,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 2
-        },
-        {
-          "name": "Cold Brew (32oz)",
-          "description": "Smooth cold brew coffee served over ice.",
-          "price": 4.50,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 3
-        },
-        {
-          "name": "Iced Americano (32oz)",
-          "description": "Espresso and water served over ice.",
-          "price": 4.25,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 1
-        },
-        {
-          "name": "Vanilla Iced Latte (32oz)",
-          "description": "Espresso with milk and vanilla syrup over ice.",
-          "price": 4.75,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 2
+          "name": "Orange Splash",
+          "price": 9.99,
+          "description": "Orange, electrolytes, vitamins B6 and B12, 160 mg caffeine",
+          "popularity": 2,
+          "image": "../menu_images/OrangeSplash.png"
         }
       ]
     }
