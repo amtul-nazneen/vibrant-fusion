@@ -1,168 +1,757 @@
 {
   "menu": [{
-      "category": "Bowls",
-      "icon": "🥣",
-      "items": [{
-          "name": "Tropical Açaí Bowl",
-          "description": "Organic açaí with banana and coconut milk, topped with granola, mango, strawberries, and coconut flakes.",
-          "price": 11.50,
-          "image": "../menu_images/sample.jpeg",
-          "popularity": 3
-        }
-      ]
+    "category": "Bowls",
+    "icon": "🥣",
+    "items": [
+      {
+        "name": "Acai Bowl",
+        "description": "Mixed berries with plant-based protein Base. Topped with granola, shaved almonds, coconut flakes, strawberries, raspberries, blueberries, and a honey drizzle.",
+        "price": 12.49,
+        "image": "../menu_images/bowls/AcaiBowl.jpeg",
+        "popularity": 2
+      },
+      {
+        "name": "Dragon Fruit Bowl",
+        "description": "Dragon Fruit, Mango & Banana with plant-based protein Base. Topped with granola, shaved almonds, coconut flakes, strawberries, pineapple and a honey drizzle",
+        "price": 12.49,
+        "image": "../menu_images/bowls/DragonFruitBowl.jpeg",
+        "popularity": 2
+      },
+      {
+        "name": "Mango Bowl",
+        "description": "Mango & Pineapple with plant-based protein Base. Topped with granola, shaved almonds, coconut flakes, strawberries, pineapple and a honey drizzle.",
+        "price": 12.49,
+        "image": "../menu_images/bowls/MangoBowl.jpeg",
+        "popularity": 2
+      },
+      {
+        "name": "Mango Pineapple Bowl",
+        "description": "Mango & Pineapple with plant-based protein Base. Topped with granola, shaved almonds, coconut flakes, strawberries, pineapple and a honey drizzle.",
+        "price": 12.49,
+        "image": "../menu_images/bowls/MangoPineappleBowl.jpeg",
+        "popularity": 2
+      },
+      {
+        "name": "Pb Choco Banana Bowl",
+        "description": "Banana & Peanut powder with plant-based protein Base. Topped with granola, shaved almonds, coconut flakes, strawberries, banana and peanut butter",
+        "price": 12.49,
+        "image": "../menu_images/bowls/PbChocoBananaBowl.jpeg",
+        "popularity": 2
+      },
+      {
+        "name": "Pineapple Coconut Bowl",
+        "description": "Pineapple & coconut Base with plant-based protein. Topped with granola, coconut flakes, pecans, strawberries, pineapple, and a honey drizzle.",
+        "price": 12.49,
+        "image": "../menu_images/bowls/PineappleCoconutBowl.jpeg",
+        "popularity": 2
+      },
+      {
+        "name": "Strawberry-banana Bowl",
+        "description": "Banana & Strawberry with plant-based protein Base. Topped with granola, shaved almonds, coconut flakes, strawberries, banana and a drizzle of honey.",
+        "price": 12.49,
+        "image": "../menu_images/bowls/StrawberryBananaBowl.jpeg",
+        "popularity": 2
+      },
+      {
+        "name": "Strawberry-mango Bowl",
+        "description": "Strawberries & Mango with plant-based protein Base. Topped with granola, shaved almonds, coconut flakes, strawberries, raspberries, blueberries, and a honey drizzle.",
+        "price": 12.49,
+        "image": "../menu_images/bowls/StrawberryMangoBowl.jpeg",
+        "popularity": 2
+      }
+    ]
+  }
+,
+{
+"category": "Refreshers & Teas",
+"icon": "🥤",
+"items": [
+  {
+    "name": "Sunny Day",
+    "description": "Electrolytes, Collogen and Caffeine free",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/SunnyDay.png",
+    "popularity": 2
+  },
+  {
+    "name": "Berry Bliss",
+    "description": "Wild berry, Collagen, Protein and Caffeine",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/BerryBliss.png",
+    "popularity": 2
+  },
+  {
+    "name": "Captain America",
+    "description": "Watermelon, Blue Blast, Electrolytes and Caffeine",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/CaptainAmerica.png",
+    "popularity": 2
+  },
+  {
+    "name": "Cucumber Lemonade",
+    "description": "Probiotic, Blood Circulation support and Caffeine",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/CucumberLemonade.png",
+    "popularity": 2
+  },
+  {
+    "name": "Aloha Sunset",
+    "description": "Pineapple, Cherry Electrolytes and Caffeine (160mg)",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/AlohaSunset.png",
+    "popularity": 2
+  },
+  {
+    "name": "Digestive",
+    "description": "Fiber, Probiotic., Caffeine (160mg) and Soft Lemonade",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/Digestive.png",
+    "popularity": 2
+  },
+  {
+    "name": "Hot Girl Summer",
+    "description": "A blend of tropical flavors featuring watermelon, pineapple, and mango, typically infused with a hint of citrus for a refreshing experience.",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/HotGirlSummer.png",
+    "popularity": 2
+  },
+  {
+    "name": "Ruby Tart Splash",
+    "description": "Hibiscus tea blended with apple, blood orange, and tangerine flavors, complemented by organic rose hips and papaya.",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/RubyTartSplash.png",
+    "popularity": 2
+  },
+  {
+    "name": "Immunity",
+    "description": "Vitamin D, Zinc & Aloe Vera, Vitamin C, Caffeine (160mg) and Orange",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/Immunity.png",
+    "popularity": 2
+  },
+  {
+    "name": "Cherry On Top",
+    "description": "Collagen, Aloe Vera, Caffeine (160gm) Orange, Cherry",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/CherryOnTop.png",
+    "popularity": 2
+  },
+  {
+    "name": "Beach Days",
+    "description": "Electrolytes, Caffeine (85mg), Green apple and Blue Blast",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/BeachDays.png",
+    "popularity": 2
+  },
+  {
+    "name": "Blue Vibes",
+    "description": "Electrolytes, Caffeine (85 mg), Blackberry and Blueberry",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/BlueVibes.png",
+    "popularity": 2
+  },
+  {
+    "name": "Pink Flamingo",
+    "description": "Caffeine free, Protein, Collagen, Aloe vera, Watermelon, Pomegranate and Strawberry.",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/PinkFlamingo.png",
+    "popularity": 2
+  },
+  {
+    "name": "Tropical Mango",
+    "description": "Fiber, Aloe Vera, Caffeine free, Protein",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/TropicalMango.png",
+    "popularity": 2
+  },
+  {
+    "name": "Black Mamba",
+    "description": "Vitamin C, Ginger Root, Caffeine (160gm), Watermelon, Cherry and Blackberry",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/BlackMamba.png",
+    "popularity": 2
+  },
+  {
+    "name": "Trash Can Punch",
+    "description": "Collagen, Aloe Vera, Caffeine (160mg), Watermelon and Passion fruit",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/TrashCanPunch.png",
+    "popularity": 2
+  },
+  {
+    "name": "Red Fusion",
+    "description": "Vitamin C Vitamin B complex, Aloe Vera, Caffeine (160mg), Watermelon and Pomegranate",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/RedFusion.png",
+    "popularity": 2
+  },
+  {
+    "name": "Sweet Lime Breeze",
+    "description": "Vitamin C, Probiotic, Caffeine, and Kiwi-Lime",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/SweetLimeBreeze.png",
+    "popularity": 2
+  },
+  {
+    "name": "Pineapple Passion",
+    "description": "Electrolytes, Aloe Vera, Caffeine (85mg), Pineapple",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/PineapplePassion.png",
+    "popularity": 2
+  },
+  {
+    "name": "Orange Splash",
+    "description": "Electrolytes, Aloe Vera, Caffeine (160mg), Orange",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/OrangeSplash.png",
+    "popularity": 2
+  }
+]
+},
+{
+"category": "Smoothies",
+"icon": "🥤",
+"items": [
+  {
+    "name": "Berry Blast",
+    "description": "Blueberries, banana, dates, almond butter, and almond milk for a creamy, naturally sweet smoothie.",
+    "price": { "20oz": 9.99 },
+    "image": "../menu_images/smoothies/BerryBlast.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Golden Glow",
+    "description": "A creamy blend of mango, banana, agave, and coconut milk for a naturally sweet, tropical smoothie.",
+    "price": { "20oz": 9.99 },
+    "image": "../menu_images/smoothies/GoldenGlow.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Green Dream",
+    "description": "A creamy blend of kale/spinach, banana, peanut butter, oats, agave, and coconut milk for a naturally sweet, protein-packed smoothie.",
+    "price": { "20oz": 9.99 },
+    "image": "../menu_images/smoothies/GreenDream.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Green Goodness",
+    "description": "A refreshing blend of pineapple, green apple, kale/spinach with coconut water/orange juice for a naturally vibrant, nutrient-packed drink.",
+    "price": { "20oz": 9.99 },
+    "image": "../menu_images/smoothies/GreenGoodness.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Green Vitality",
+    "description": "A revitalizing blend of cucumber, ginger, pineapple, spinach, celery, and coconut water for a naturally refreshing, nutrient-packed drink.",
+    "price": { "20oz": 9.99 },
+    "image": "../menu_images/smoothies/GreenVitality.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Island Breeze",
+    "description": "A tropical blend of pineapple, coconut, and a touch of agave, mixed with creamy coconut milk for a naturally sweet, refreshing smoothie.",
+    "price": { "20oz": 9.99 },
+    "image": "../menu_images/smoothies/IslandBreeze.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Mango Magic",
+    "description": "A creamy blend of mango and agave with almond milk for a naturally sweet and refreshing smoothie.",
+    "price": { "20oz": 9.99 },
+    "image": "../menu_images/smoothies/MangoMagic.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Peach & Berry Delight",
+    "description": "A smooth blend of peaches, strawberries, and agave with orange juice and almond milk for a naturally sweet, refreshing smoothie.",
+    "price": { "20oz": 9.99 },
+    "image": "../menu_images/smoothies/PeachBerryDelight.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Strawberry Banana Twist",
+    "description": "A creamy blend of strawberries and banana with a hint of agave and almond milk for a naturally sweet and refreshing smoothie.",
+    "price": { "20oz": 9.99 },
+    "image": "../menu_images/smoothies/StrawberryBananaTwist.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Sunshine",
+    "description": "A creamy blend of mango, strawberries, and banana with almond milk for a naturally sweet and refreshing smoothie.",
+    "price": { "20oz": 9.99 },
+    "image": "../menu_images/smoothies/Sunshine.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Tropical",
+    "description": "A tropical blend of banana, mango, and pineapple with creamy coconut milk for a naturally sweet and refreshing smoothie.",
+    "price": { "20oz": 9.99 },
+    "image": "../menu_images/smoothies/Tropical.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Wildberry Fusion",
+    "description": "A vibrant blend of blueberries, raspberries, blackberries, and strawberries with agave and almond milk for a naturally sweet, antioxidant-packed smoothie.",
+    "price": { "20oz": 9.99 },
+    "image": "../menu_images/smoothies/WildberryFusion.jpeg",
+    "popularity": 2
+  }
+]
+},
+{
+"category": "Protein Shakes",
+"icon": "💪",
+"items": [
+  {
+    "name": "Choco Banana",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/ChocoBanana.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "PB Choco Banana",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/PBChocoBanana.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "PB Chocolate",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/PBChocolate.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Berry Blossom",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/BerryBlossom.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Green Paradise",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/GreenParadise.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Churro",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/Churro.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Strawberry Banana",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/StrawberryBanana.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Mango Pineapple",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/MangoPineapple.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "S'mores",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/Smores.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "PB Banana",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/PBBanana.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Birthday Cake",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/BirthdayCake.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Butter Pecan",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/ButterPecan.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Chocolate Mint Oreo",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/ChocolateMintOreo.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Pineapple Coconut",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/PineappleCoconut.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Cookies & Cream",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/CookiesCream.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Cinnamon Roll",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/CinnamonRoll.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Dark Choco-Coco",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/DarkChocoCoco.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Fruity Pebbles",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/FruityPebbles.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Mocha",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/Mocha.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Pumpkin Spice",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 11.99 },
+    "image": "../menu_images/proteinShakes/PumpkinSpice.jpeg",
+    "popularity": 2
+  }
+]
+},{
+"category": "Cheesecake Shakes",
+"icon": "🍰",
+"items": [
+  {
+    "name": "Blueberry Cheesecake",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 10.50 },
+    "image": "../menu_images/cheesecakeShakes/BlueberryCheesecake.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Peanut Butter Cheesecake",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 10.50 },
+    "image": "../menu_images/cheesecakeShakes/PeanutButterCheesecake.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Strawberry Cheesecake",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 10.50 },
+    "image": "../menu_images/cheesecakeShakes/StrawberryCheesecake.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Tres Leches Cheesecake",
+    "description": "",
+    "price": { "20oz": 9.99, "32oz": 10.50 },
+    "image": "../menu_images/cheesecakeShakes/TresLechesCheesecake.jpeg",
+    "popularity": 2
+  }
+]
+},
+{
+"category": "Caffeine Free Drinks",
+"icon": "🌿",
+"items": [
+  {
+    "name": "Blue Surfer",
+    "description": "Protein, blue raspberry, pineapple, and coconut.",
+    "price": { "32oz": 9.99 },
+    "image": "../menu_images/caffeineFreeDrinks/BlueSurfer.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Dragon Berry",
+    "description": "Dragonfruit, protein, and coconut.",
+    "price": { "32oz": 9.99 },
+    "image": "../menu_images/caffeineFreeDrinks/DragonBerry.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Pink Flamingo",
+    "description": "A vibrant blend of fruity flavors with a striking pink hue.",
+    "price": { "32oz": 9.99 },
+    "image": "../menu_images/caffeineFreeDrinks/PinkFlamingo.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Berry Brûlée",
+    "description": "A blend of protein, blueberry, strawberry, and vanilla.",
+    "price": { "32oz": 9.99 },
+    "image": "../menu_images/caffeineFreeDrinks/BerryBrulee.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Peach Pop",
+    "description": "Peach, mango, and protein.",
+    "price": { "32oz": 9.99 },
+    "image": "../menu_images/caffeineFreeDrinks/PeachPop.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Pink Drink",
+    "description": "Protein, wild berries, and strawberries.",
+    "price": { "32oz": 9.99 },
+    "image": "../menu_images/caffeineFreeDrinks/PinkDrink.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Sweet Tart",
+    "description": "Protein, wild berry, and grape.",
+    "price": { "32oz": 9.99 },
+    "image": "../menu_images/caffeineFreeDrinks/SweetTart.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Sunny Day",
+    "description": "Electrolytes and collagen.",
+    "price": { "32oz": 9.99 },
+    "image": "../menu_images/caffeineFreeDrinks/SunnyDay.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Tropical Mango",
+    "description": "Featuring tropical mango juice, offering a refreshing and fruity experience.",
+    "price": { "32oz": 9.99 },
+    "image": "../menu_images/caffeineFreeDrinks/TropicalMango.jpeg",
+    "popularity": 2
+  }
+]
+},{
+"category": "Hot Coffees",
+"icon": "☕",
+"items": [
+  {
+    "name": "Houseblend",
+    "description": "Our houseblend coffee, freshly brewed to offer a rich and robust flavor, providing a comforting and invigorating experience.",
+    "price": { "20oz": 8.99 },
+    "image": "../menu_images/hotCoffees/Houseblend.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Chai Latte",
+    "description": "Steamed milk blended with spiced chai tea, featuring aromatic flavors like cinnamon, cloves, and ginger.",
+    "price": { "20oz": 7.99 },
+    "image": "../menu_images/hotCoffees/ChaiLatte.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Caramel Macchiato",
+    "description": "Espresso layered with steamed milk, vanilla syrup, and caramel sauce, topped with a caramel drizzle.",
+    "price": { "20oz": 8.99 },
+    "image": "../menu_images/hotCoffees/CaramelMacchiato.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Mocha Coffee",
+    "description": "Espresso blended with steamed milk and chocolate sauce, typically topped with whipped cream and a chocolate drizzle.",
+    "price": { "20oz": 8.99 },
+    "image": "../menu_images/hotCoffees/MochaCoffee.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Caramel Latte",
+    "description": "Espresso combined with steamed milk, caramel syrup, and a light layer of foam, creating a sweet and creamy coffee.",
+    "price": { "20oz": 8.99 },
+    "image": "../menu_images/hotCoffees/CaramelLatte.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Pumpkin Spice Latte",
+    "description": "Espresso combined with pumpkin spice syrup and steamed milk, finished with a light layer of foam.",
+    "price": { "20oz": 8.99 },
+    "image": "../menu_images/hotCoffees/PumpkinSpiceLatte.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Salted Caramel Macchiato",
+    "description": "Espresso layered with steamed milk, caramel syrup, and a hint of vanilla, topped with a salted caramel drizzle.",
+    "price": { "20oz": 8.99 },
+    "image": "../menu_images/hotCoffees/SaltedCaramelMacchiato.jpeg",
+    "popularity": 2
+  }
+]
+},
+{
+  "category": "Iced Coffees",
+  "icon": "🧊",
+  "items": [
+    {
+      "name": "Iced Caramel Macchiato",
+      "description": "Espresso layered over milk with caramel syrup and a caramel drizzle, served over ice.",
+      "price": { "32oz": 8.99 },
+      "image": "../menu_images/icedCoffees/IcedCaramelMacchiato.jpeg",
+      "popularity": 2
     },
     {
-      "category": "Refreshing drinks",
-      "icon": "🥤",
-      "items": [
-        {
-          "name": "Sunny Day",
-          "price": 9.99,
-          "description": "Electrolytes, collagen, caffeine free",
-          "popularity": 2,
-          "image": "../menu_images/SunnyDay.png"
-        },
-        {
-          "name": "Berry Bliss",
-          "price": 9.99,
-          "description": "Wild berry, collagen, probiotic, 85 mg caffeine",
-          "popularity": 2,
-          "image": "../menu_images/BerryBliss.png"
-        },
-        {
-          "name": "Captain America",
-          "price": 9.99,
-          "description": "Watermelon, blue blast, electrolytes, 160 mg caffeine",
-          "popularity": 2,
-          "image": "../menu_images/CaptainAmerica.png"
-        },
-        {
-          "name": "Cucumber Lemonade",
-          "price": 9.99,
-          "description": "Cucumber, lemonade, probiotic, blood circulation support, 160 mg caffeine",
-          "popularity": 2,
-          "image": "../menu_images/CucumberLemonade.png"
-        },
-        {
-          "name": "Aloha Sunset",
-          "price": 9.99,
-          "description": "Pineapple, cherry, electrolytes, 85 mg caffeine",
-          "popularity": 2,
-          "image": "../menu_images/AlohaSunset.png"
-        },
-        {
-          "name": "Digestive",
-          "price": 9.99,
-          "description": "Soft lemonade, probiotic, fiber, 160 mg caffeine",
-          "popularity": 2,
-          "image": "../menu_images/Digestive.png"
-        },
-        {
-          "name": "Hot Girl Summer",
-          "price": 9.99,
-          "description": "Pomegranate, wild berry, orange pineapple, 100 mg caffeine, vitamin C",
-          "popularity": 2,
-          "image": "../menu_images/HotGirlSummer.png"
-        },
-        {
-          "name": "Ruby Tart Splash",
-          "price": 9.99,
-          "description": "Pomegranate, cherry, watermelon, vitamin C, biotin, 160 mg caffeine",
-          "popularity": 2,
-          "image": "../menu_images/RubyTartSplash.png"
-        },
-        {
-          "name": "Immunity",
-          "price": 9.99,
-          "description": "Orange, zinc, vitamin C-D, 100 mg caffeine",
-          "popularity": 2,
-          "image": "../menu_images/Immunity.png"
-        },
-        {
-          "name": "Cherry On Top",
-          "price": 9.99,
-          "description": "Cherry, collagen, biotin, 80 mg caffeine",
-          "popularity": 2,
-          "image": "../menu_images/CherryOnTop.png"
-        },
-        {
-          "name": "Beach Days",
-          "price": 9.99,
-          "description": "Electrolytes, green apple, blue blast, 85 mg caffeine",
-          "popularity": 2,
-          "image": "../menu_images/BeachDays.png"
-        },
-        {
-          "name": "Blue Vibes",
-          "price": 9.99,
-          "description": "Electrolytes, blueberry, blueberry, blue blast, 85 mg caffeine",
-          "popularity": 2,
-          "image": "../menu_images/BlueVibes.png"
-        },
-        {
-          "name": "Pink Flamingo",
-          "price": 9.99,
-          "description": "Strawberry pomegranate, caffeine free, collagen",
-          "popularity": 2,
-          "image": "../menu_images/PinkFlamingo.png"
-        },
-        {
-          "name": "Tropical Mango",
-          "price": 9.99,
-          "description": "Mango, caffeine free, 15 g protein",
-          "popularity": 2,
-          "image": "../menu_images/TropicalMango.png"
-        },
-        {
-          "name": "Black Mamba",
-          "price": 9.99,
-          "description": "Blackberry, vitamin C, ginseng root, 160 mg caffeine",
-          "popularity": 2,
-          "image": "../menu_images/BlackMamba.png"
-        },
-        {
-          "name": "Trash Can Punch",
-          "price": 9.99,
-          "description": "Blue blast, vitamin C, 160 mg caffeine",
-          "popularity": 2,
-          "image": "../menu_images/TrashCanPunch.png"
-        },
-        {
-          "name": "High Caffeine",
-          "price": 9.99,
-          "description": "19.5 g protein, 150 calories, caffeine free",
-          "popularity": 2,
-          "image": "../menu_images/HighCaffeine.png"
-        },
-        {
-          "name": "Red Fusion",
-          "price": 9.99,
-          "description": "Pomegranate watermelon, 85 mg caffeine, vitamin C, vitamin B complex",
-          "popularity": 2,
-          "image": "../menu_images/RedFusion.png"
-        },
-        {
-          "name": "Sweet Lime Breeze",
-          "price": 9.99,
-          "description": "Kiwi, lime, mango, probiotic, vitamin C, 160 mg caffeine",
-          "popularity": 2,
-          "image": "../menu_images/SweetLimeBreeze.png"
-        },
-        {
-          "name": "Pineapple Passion",
-          "price": 9.99,
-          "description": "Pineapple, electrolytes, vitamins, 125 mg caffeine",
-          "popularity": 2,
-          "image": "../menu_images/PineapplePassion.png"
-        },
-        {
-          "name": "Orange Splash",
-          "price": 9.99,
-          "description": "Orange, electrolytes, vitamins B6 and B12, 160 mg caffeine",
-          "popularity": 2,
-          "image": "../menu_images/OrangeSplash.png"
-        }
-      ]
+      "name": "Iced Salted Caramel Macchiato",
+      "description": "Espresso poured over milk with caramel and sea salt, finished with a caramel drizzle.",
+      "price": { "32oz": 8.99 },
+      "image": "../menu_images/icedCoffees/IcedSaltedCaramelMacchiato.jpeg",
+      "popularity": 2
+    },
+    {
+      "name": "Mocha Iced Protein Coffee",
+      "description": "Espresso double shot blended with chocolate protein and almond milk, served over ice in a 32 oz cup.",
+      "price": { "32oz": 8.99 },
+      "image": "../menu_images/icedCoffees/MochaIcedProteinCoffee.jpeg",
+      "popularity": 2
+    },
+    {
+      "name": "Caramel Latte",
+      "description": "Medium roast coffee with a double shot of espresso, milk, and caramel syrup, served over ice.",
+      "price": { "32oz": 8.99 },
+      "image": "../menu_images/icedCoffees/CaramelLatte.jpeg",
+      "popularity": 2
+    },
+    {
+      "name": "Houseblend Iced Protein Coffee",
+      "description": "Brewed house blend coffee over ice, typically incorporating protein powder for a smooth and energizing beverage.",
+      "price": { "32oz": 8.99 },
+      "image": "../menu_images/icedCoffees/HouseblendIcedProteinCoffee.jpeg",
+      "popularity": 2
     }
+  ]
+},
+{
+"category": "Power Breakfast",
+"icon": "🍳",
+"items": [
+  {
+    "name": "Protein Oats",
+    "description": "Apple fiber, cinnamon, protein, topped with granola, banana, strawberries, blueberries, and almonds.",
+    "price": 9.99,
+    "image": "../menu_images/powerBreakfast/ProteinOats.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Caramel Apple Cheesecake",
+    "description": "Caramel apple cheesecake features creamy cheesecake infused with Granny Smith apple chunks, wrapped in caramel, and topped with a baked streusel and caramel drizzle.",
+    "price": 4.95,
+    "image": "../menu_images/powerBreakfast/CaramelAppleCheesecake.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Protein Donuts",
+    "description": "Protein donuts typically made with almond flour, featuring a variety of toppings like nuts, fruits, and chocolate, providing a protein-rich treat.",
+    "price": {
+      "2pcs": 8.00,
+      "3pcs": 11.50,
+      "4pcs": 14.50,
+      "5pcs":17.50,
+      "6pc": 24.00,
+      "12pcs": 37.00
+    },
+    "image": "../menu_images/powerBreakfast/ProteinDonuts.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Mocha",
+    "description": "Rich chocolate donut infused with coffee flavor, topped with a swirl of whipped cream and a sprinkle of cocoa powder.",
+    "price": 4.95,
+    "image": "../menu_images/powerBreakfast/Mocha.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Blueberry",
+    "description": "A protein donut made with blueberry dough, typically featuring a light glaze for added sweetness.",
+    "price": 4.95,
+    "image": "../menu_images/powerBreakfast/Blueberry.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Red Velvet",
+    "description": "A red velvet donut typically features a moist cake base with a hint of cocoa, topped with a smooth cream cheese glaze.",
+    "price": 4.95,
+    "image": "../menu_images/powerBreakfast/RedVelvet.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Protein Waffle",
+    "description": "No flour protein waffles made with egg whites, wholesome oats, and plant-based protein for a clean, satisfying boost. Naturally sweet and served with fresh bananas, strawberries, and blueberries. Finished with optional light drizzles of Nutella, caramel, or chocolate.",
+    "price": 9.99,
+    "image": "../menu_images/powerBreakfast/ProteinWaffle.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Egg Muffin",
+    "description": "Contains Parmesan cheese, ricotta cheese, bell peppers, spinach, and onion.",
+    "price": {
+      "1pc": 3.50,
+      "2pcs": 6.99
+    },
+    "image": "../menu_images/powerBreakfast/EggMuffin.jpeg",
+    "popularity": 2
+  }
+]
+}
   ]
 }

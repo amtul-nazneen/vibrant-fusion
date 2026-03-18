@@ -23,7 +23,7 @@ window.addEventListener('resize', () => {
   categoryBar.style.setProperty('--navbar-height', navbarHeight + 'px');
 });
 // ===== FETCH MENU DATA =====
-fetch("../data/menu.json")
+fetch("../data/menu.json")//important
   .then(response => response.json())
   .then(data => {
     menuData = data;

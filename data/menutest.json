@@ -1,0 +1,75 @@
+{
+  "menu": [{
+  "category": "Power Breakfast",
+  "icon": "🍳",
+  "items": [
+    {
+      "name": "Protein Oats",
+      "description": "Apple fiber, cinnamon, protein, topped with granola, banana, strawberries, blueberries, and almonds.",
+      "price": 9.99,
+      "image": "../menu_images/powerBreakfast/ProteinOats.jpeg",
+      "popularity": 2
+    },
+    {
+      "name": "Caramel Apple Cheesecake",
+      "description": "Caramel apple cheesecake features creamy cheesecake infused with Granny Smith apple chunks, wrapped in caramel, and topped with a baked streusel and caramel drizzle.",
+      "price": 4.95,
+      "image": "../menu_images/powerBreakfast/CaramelAppleCheesecake.jpeg",
+      "popularity": 2
+    },
+    {
+      "name": "Protein Donuts",
+      "description": "Protein donuts typically made with almond flour, featuring a variety of toppings like nuts, fruits, and chocolate, providing a protein-rich treat.",
+      "price": {
+        "2pcs": 8.00,
+        "3pcs": 11.50,
+        "4pcs": 14.50,
+        "5pcs":17.50,
+        "6pc": 24.00,
+        "12pcs": 37.00
+      },
+      "image": "../menu_images/powerBreakfast/ProteinDonuts.jpeg",
+      "popularity": 2
+    },
+    {
+      "name": "Mocha",
+      "description": "Rich chocolate donut infused with coffee flavor, topped with a swirl of whipped cream and a sprinkle of cocoa powder.",
+      "price": 4.95,
+      "image": "../menu_images/powerBreakfast/Mocha.jpeg",
+      "popularity": 2
+    },
+    {
+      "name": "Blueberry",
+      "description": "A protein donut made with blueberry dough, typically featuring a light glaze for added sweetness.",
+      "price": 4.95,
+      "image": "../menu_images/powerBreakfast/Blueberry.jpeg",
+      "popularity": 2
+    },
+    {
+      "name": "Red Velvet",
+      "description": "A red velvet donut typically features a moist cake base with a hint of cocoa, topped with a smooth cream cheese glaze.",
+      "price": 4.95,
+      "image": "../menu_images/powerBreakfast/RedVelvet.jpeg",
+      "popularity": 2
+    },
+    {
+      "name": "Protein Waffle",
+      "description": "No flour protein waffles made with egg whites, wholesome oats, and plant-based protein for a clean, satisfying boost. Naturally sweet and served with fresh bananas, strawberries, and blueberries. Finished with optional light drizzles of Nutella, caramel, or chocolate.",
+      "price": 9.99,
+      "image": "../menu_images/powerBreakfast/ProteinWaffle.jpeg",
+      "popularity": 2
+    },
+    {
+      "name": "Egg Muffin",
+      "description": "Contains Parmesan cheese, ricotta cheese, bell peppers, spinach, and onion.",
+      "price": {
+        "1pc": 3.50,
+        "2pcs": 6.99
+      },
+      "image": "../menu_images/powerBreakfast/EggMuffin.jpeg",
+      "popularity": 2
+    }
+  ]
+}
+]
+}

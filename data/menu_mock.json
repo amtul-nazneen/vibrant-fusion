@@ -1,0 +1,353 @@
+{
+  "menu": [{
+      "category": "Bowls",
+      "icon": "🥣",
+      "items": [{
+          "name": "Tropical Açaí Bowl",
+          "description": "Organic açaí with banana and coconut milk, topped with granola, mango, strawberries, and coconut flakes.",
+          "price": 11.50,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 3
+        },
+        {
+          "name": "Berry Power Bowl",
+          "description": "Açaí base topped with blueberries, raspberries, strawberries, chia seeds, and honey drizzle.",
+          "price": 12.00,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 2
+        },
+        {
+          "name": "Peanut Butter Bliss Bowl",
+          "description": "Açaí blended with banana, topped with peanut butter, granola, cacao nibs, and honey.",
+          "price": 12.50,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 3
+        },
+        {
+          "name": "Green Energy Bowl",
+          "description": "Açaí blended with spinach and pineapple, topped with kiwi, granola, pumpkin seeds, and coconut flakes.",
+          "price": 11.75,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 1
+        },
+        {
+          "name": "Chocolate Lover’s Açaí Bowl",
+          "description": "Açaí blended with banana and cocoa powder, topped with strawberries, dark chocolate chips, and almond butter.",
+          "price": 12.75,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 2
+        }
+      ]
+    },
+    {
+      "category": "Smoothies",
+      "icon": "🍓",
+      "items": [{
+          "name": "Strawberry Banana Smoothie (20oz)",
+          "description": "Fresh strawberries and bananas blended with yogurt and almond milk.",
+          "price": 7.50,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 3
+        },
+        {
+          "name": "Mango Pineapple Paradise (20oz)",
+          "description": "Mango and pineapple blended with coconut water for a tropical refreshment.",
+          "price": 7.75,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 2
+        },
+        {
+          "name": "Mixed Berry Delight (20oz)",
+          "description": "Blueberries, raspberries, and strawberries blended with orange juice and ice.",
+          "price": 8.00,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 3
+        },
+        {
+          "name": "Green Detox Smoothie (20oz)",
+          "description": "Spinach, apple, pineapple, banana, and coconut water blended for a refreshing green smoothie.",
+          "price": 8.25,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 1
+        },
+        {
+          "name": "Peach Sunshine Smoothie (20oz)",
+          "description": "Juicy peaches blended with banana, orange juice, and yogurt.",
+          "price": 7.75,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 2
+        }
+      ]
+    },
+    {
+      "category": "Refreshing drinks",
+      "icon": "🥤",
+      "items": [{
+          "name": "Cucumber Mint Refresher (32oz)",
+          "description": "Cooling cucumber and mint blended with sparkling water.",
+          "price": 6.75,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 2
+        },
+        {
+          "name": "Citrus Berry Splash (32oz)",
+          "description": "Oranges, lemons, and berries blended with honey and sparkling water.",
+          "price": 7.00,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 3
+        },
+        {
+          "name": "Tropical Lemonade (32oz)",
+          "description": "Pineapple, mango, and lime blended with lemonade.",
+          "price": 6.75,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 2
+        },
+        {
+          "name": "Watermelon Cooler (32oz)",
+          "description": "Fresh watermelon blended with lime and sparkling water.",
+          "price": 7.00,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 1
+        },
+        {
+          "name": "Strawberry Lemon Fizz (32oz)",
+          "description": "Strawberries and lemon blended with sparkling water.",
+          "price": 6.75,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 3
+        }
+      ]
+    },
+    {
+      "category": "Protein shakes",
+      "icon": "💪",
+      "items": [{
+          "name": "Vanilla Whey Power Shake",
+          "description": "Vanilla whey protein blended with banana and almond milk.",
+          "price": {
+            "20oz": 8.50,
+            "32oz": 10.50
+          },
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 3
+        },
+        {
+          "name": "Chocolate Muscle Builder",
+          "description": "Chocolate protein powder blended with peanut butter, banana, and oat milk.",
+          "price": {
+            "20oz": 9.00,
+            "32oz": 11.00
+          },
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 3
+        },
+        {
+          "name": "Berry Protein Blast",
+          "description": "Mixed berries blended with vanilla protein, Greek yogurt, almond milk, and chia seeds.",
+          "price": {
+            "20oz": 9.25,
+            "32oz": 11.25
+          },
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 2
+        },
+        {
+          "name": "Coffee Protein Boost",
+          "description": "Cold brew coffee blended with chocolate protein powder, banana, and almond milk.",
+          "price": {
+            "20oz": 9.50,
+            "32oz": 11.50
+          },
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 1
+        },
+        {
+          "name": "Green Protein Shake",
+          "description": "Vanilla protein blended with spinach, pineapple, banana, and coconut water.",
+          "price": {
+            "20oz": 9.25,
+            "32oz": 11.25
+          },
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 2
+        }
+      ]
+    },
+    {
+      "category": "Cheesecake shakes",
+      "icon": "🍰",
+      "items": [{
+          "name": "Strawberry Cheesecake Shake",
+          "description": "Creamy cheesecake blended with strawberries, milk, and vanilla.",
+          "price": {
+            "20oz": 8.50,
+            "32oz": 10.50
+          },
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 3
+        },
+        {
+          "name": "Chocolate Cheesecake Shake",
+          "description": "Chocolate blended with cheesecake, milk, and chocolate syrup.",
+          "price": {
+            "20oz": 9.00,
+            "32oz": 11.00
+          },
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 2
+        },
+        {
+          "name": "Blueberry Cheesecake Shake",
+          "description": "Cheesecake blended with fresh blueberries and milk.",
+          "price": {
+            "20oz": 8.75,
+            "32oz": 10.75
+          },
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 2
+        },
+        {
+          "name": "Mango Cheesecake Shake",
+          "description": "Cheesecake blended with mango and milk for a tropical shake.",
+          "price": {
+            "20oz": 8.75,
+            "32oz": 10.75
+          },
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 1
+        },
+        {
+          "name": "Oreo Cheesecake Shake",
+          "description": "Cheesecake blended with Oreo cookies and milk.",
+          "price": {
+            "20oz": 9.25,
+            "32oz": 11.25
+          },
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 3
+        }
+      ]
+    },
+    {
+      "category": "Caffeine free drinks",
+      "icon": "🍵",
+      "items": [{
+          "name": "Herbal Chamomile Tea (32oz)",
+          "description": "Calming chamomile tea served hot or iced.",
+          "price": 4.50,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 2
+        },
+        {
+          "name": "Peppermint Iced Tea (32oz)",
+          "description": "Refreshing peppermint tea served cold.",
+          "price": 4.75,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 3
+        },
+        {
+          "name": "Ginger Lemon Infusion (32oz)",
+          "description": "Spicy ginger and lemon tea, caffeine-free.",
+          "price": 4.50,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 2
+        },
+        {
+          "name": "Rooibos Vanilla Latte (32oz)",
+          "description": "Naturally caffeine-free rooibos tea with vanilla syrup and steamed milk.",
+          "price": 5.00,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 1
+        },
+        {
+          "name": "Hibiscus Berry Tea (32oz)",
+          "description": "Hibiscus blended with berries for a tart, refreshing drink.",
+          "price": 4.75,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 3
+        }
+      ]
+    },
+    {
+      "category": "Hot coffees",
+      "icon": "☕",
+      "items": [{
+          "name": "Cappuccino (20oz)",
+          "description": "Classic espresso with steamed milk foam.",
+          "price": 4.50,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 3
+        },
+        {
+          "name": "Latte (20oz)",
+          "description": "Espresso with steamed milk.",
+          "price": 4.75,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 3
+        },
+        {
+          "name": "Mocha (20oz)",
+          "description": "Espresso with chocolate syrup and steamed milk.",
+          "price": 5.00,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 2
+        },
+        {
+          "name": "Americano (20oz)",
+          "description": "Espresso with hot water.",
+          "price": 4.25,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 1
+        },
+        {
+          "name": "Flat White (20oz)",
+          "description": "Espresso with steamed milk, velvety texture.",
+          "price": 4.75,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 2
+        }
+      ]
+    },
+    {
+      "category": "Iced coffees",
+      "icon": "❄️",
+      "items": [{
+          "name": "Iced Latte (32oz)",
+          "description": "Espresso poured over ice with milk.",
+          "price": 4.75,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 3
+        },
+        {
+          "name": "Iced Mocha (32oz)",
+          "description": "Espresso with chocolate syrup and milk over ice.",
+          "price": 5.00,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 2
+        },
+        {
+          "name": "Cold Brew (32oz)",
+          "description": "Smooth cold brew coffee served over ice.",
+          "price": 4.50,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 3
+        },
+        {
+          "name": "Iced Americano (32oz)",
+          "description": "Espresso and water served over ice.",
+          "price": 4.25,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 1
+        },
+        {
+          "name": "Vanilla Iced Latte (32oz)",
+          "description": "Espresso with milk and vanilla syrup over ice.",
+          "price": 4.75,
+          "image": "../menu_images/sample.jpeg",
+          "popularity": 2
+        }
+      ]
+    }
+  ]
+}
