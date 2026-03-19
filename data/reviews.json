@@ -1,40 +1,28 @@
 {
   "reviews": [
-    {
-      "name": "Emily Rodriguez",
-      "rating": 5,
-      "review": "Absolutely love this place! The acai bowls are super fresh and the toppings are generous. The staff is friendly and the place has a great vibe.",
-      "date": "2025-11-18"
-    },
-    {
-      "name": "Michael Chen",
-      "rating": 5,
-      "review": "Best smoothie bar in town. The protein shakes taste amazing and actually keep me full after workouts. Highly recommend!",
-      "date": "2025-12-03"
-    },
-    {
-      "name": "Jessica Miller",
-      "rating": 4,
-      "review": "Tried the Tropical Açaí Bowl and it was delicious. Fresh fruit, crunchy granola, and the portion size was perfect.",
-      "date": "2026-01-14"
-    },
-    {
-      "name": "David Thompson",
-      "rating": 5,
-      "review": "Great healthy option around here. Everything tastes fresh and the presentation is beautiful. My new favorite smoothie spot.",
-      "date": "2026-01-27"
-    },
-    {
-      "name": "Sarah Patel",
-      "rating": 5,
-      "review": "Amazing smoothies and friendly staff! I’ve tried several bowls and they’ve all been excellent. Definitely coming back.",
-      "date": "2026-02-10"
-    },
-    {
-      "name": "Daniel Garcia",
-      "rating": 4,
-      "review": "Very tasty smoothies and a clean, modern place. The mango smoothie is my favorite so far.",
-      "date": "2026-02-22"
-    }
-  ]
+  {
+    "name": "Ken",
+    "rating": 5,
+    "review": "Must go!!!! Incredibly delicious, genuinely healthy food with beautiful presentation. This is hands down the best açaí I’ve ever had — rich, generous portions. Whether you’re health-focused or just someone who loves bold flavors and great textures, this place delivers.",
+    "date": ""
+  },
+  {
+    "name": "Maribel Hernandez",
+    "rating": 5,
+    "review": "The service here was exceptional! The selections were countless. The drinks, egg muffins, and protein donuts were fire 🔥 Definitely worth the 30-minute drive!",
+    "date": ""
+  },
+  {
+    "name": "Vanessa Reyes",
+    "rating": 5,
+    "review": "Stopped in for a quick, healthy snack and was really impressed! The service was friendly and fast. I got takeout, but the place was so clean and inviting—I definitely would’ve stayed if I hadn’t been in a hurry. The entire menu looked delicious. I tried the Green Paradise drink and the pumpkin protein cakes—both were absolutely tasty! Highly recommend checking this place out.",
+    "date": ""
+  },
+  {
+    "name": "Giuliana Marchese",
+    "rating": 5,
+    "review": "I love this place. I have tried all of the bowls and they are fantastic! Service is phenomenal and fast.",
+    "date": ""
+  }
+]
 }

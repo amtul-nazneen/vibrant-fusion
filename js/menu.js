@@ -139,7 +139,7 @@ function renderMenu(data) {
       card.className = "menu-card";
 
       // ---- PRICE HTML ----
-      let priceHTML = "";
+      /*let priceHTML = "";
       if (typeof item.price === "object") {
         const sizes = Object.keys(item.price);
         let selectedSize = sizes[0];
@@ -160,7 +160,53 @@ function renderMenu(data) {
         `;
       } else {
         priceHTML = `<div class="price">$${item.price.toFixed(2)}</div>`;
-      }
+      }*/
+      let priceHTML = "";
+
+  // ✅ CASE 1: price is a NUMBER
+  if (typeof item.price === "number") {
+    priceHTML = `
+      <div class="price">
+        $${item.price.toFixed(2)}
+      </div>
+    `;
+  }
+
+  // ✅ CASE 2 & 3: price is OBJECT
+  else if (typeof item.price === "object") {
+    const sizes = Object.keys(item.price);
+    const priceId = `price-${item.name.replace(/\s+/g, '-')}`;
+
+    // ✅ ONLY ONE SIZE → no pills
+    if (sizes.length === 1) {
+      const size = sizes[0];
+      priceHTML = `
+        <div class="price single-size">
+          ${size} • $${item.price[size].toFixed(2)}
+        </div>
+      `;
+    }
+
+    // ✅ MULTIPLE SIZES → pills
+    else {
+      let selectedSize = sizes[0];
+
+      const sizeButtons = sizes.map(size => `
+        <button class="size-pill ${size === selectedSize ? 'selected' : ''}" data-size="${size}">
+          ${size}
+        </button>
+      `).join('');
+
+      priceHTML = `
+        <div class="size-prices-container">
+          ${sizeButtons}
+          <div class="price" id="${priceId}">
+            $${item.price[selectedSize].toFixed(2)}
+          </div>
+        </div>
+      `;
+    }
+  }
 
       // ---- POPULAR BADGE ----
       const popularBadge = item.popularity === 1 ? `<div class="popular-badge">🔥 Popular</div>` : "";

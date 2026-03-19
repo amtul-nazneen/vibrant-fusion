@@ -175,6 +175,7 @@ transform:translateY(-1px);
 
 .hero-content h1 {
   font-size: 56px;
+  font-family: 'Merienda', cursive;
   font-weight: 700;
   margin-bottom: 18px;
   letter-spacing: -1px;
@@ -296,14 +297,15 @@ footer {
 }
 
 /* Navbar Logo */
-.logo {
-  font-family: 'Pacifico', cursive; /* changed from Poppins */
-  font-size: 26px;
-  font-weight: normal; /* optional, Pacifico looks best without heavy weight */
-  color: #ef4444; /* keep your smoothie red */
+/*.logo {
+  font-family: 'Cookie', cursive;
+  font-size: 36px;
+  font-weight: normal;
+  color: #ef4444;
   display: flex;
   align-items: center;
-}
+}*/
+
 
 .logo:hover {
   color: #f97316; /* bright orange on hover */
@@ -323,10 +325,9 @@ padding: 10px 20px;
 }
 
 /* Logo */
-.logo {
-  font-family: 'Pacifico', cursive; /* cooler font */
-  font-size: 1.2rem;
-  color: #ef4444; /* smoothie red */
+/*.logo {
+  font-family: 'Cookie', cursive;
+  color: #ef4444;
   text-align: center;
   margin-bottom: 12px;
   display: flex;
@@ -334,6 +335,25 @@ padding: 10px 20px;
   justify-content: center;
   text-decoration: none;
   font-weight: :bold;
+}*/
+
+/* LOGO - clean, single rule */
+/*.logo {
+  font-family: 'Cookie', cursive;
+  font-size: 36px;
+  font-weight: normal;
+  color: #ef4444;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.25s, color 0.25s;
+}*/
+
+.logo:hover {
+  color: #f97316;   /* hover orange */
+  transform: scale(1.05);
 }
 
 .logo-img {
@@ -1424,3 +1444,119 @@ box-shadow:0 6px 16px rgba(0,0,0,0.12);
    color: #f97316;
    border-bottom-color: #f97316;
  }
+ .read-more {
+   color: #4CAF50;
+   font-weight: 600;
+   text-decoration: none;
+   margin-left: 5px;
+ }
+
+ .read-more:hover {
+   text-decoration: underline;
+ }
+
+ .featured-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* wraps on smaller screens */
+}
+
+.card {
+  flex: 1 1 300px; /* grow, shrink, base width */
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  /*height: 200px; fixed height */
+  object-fit: cover; /* crops nicely to fill */
+  aspect-ratio: 4/3;   /* enforces same ratio for all images */
+}
+
+
+.card h3 {
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  flex-grow: 1; /* pushes footer to bottom */
+  margin: 0 10px 10px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.badge.popular { background-color: #ff6f61; }
+.badge.protein { background-color: #ff6f61; }
+.badge.trending { background-color: #ff6f61; }
+
+.featured-section h2 {
+  margin: 0;
+  font-size: 2rem; /* adjust as needed */
+}
+
+.featured-section p {
+  margin: 5px 0 20px 0; /* smaller top margin, some bottom margin */
+  font-size: 1rem;
+  color: #555; /* optional: lighter text */
+}
+
+.order-btn:hover {
+  background: #45a049;
+}
+
+
+
+
+.nav-container .logo:hover,
+.logo a:hover {
+  color: #f97316;
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .nav-container .logo,
+  .logo a {
+    font-size: 32px !important;  /* scales down nicely on phones */
+  }
+}
+
+/* Rainbow logo text */
+.nav-container .logo,
+.logo a {
+  font-family: 'Cookie', cursive;  /* or Impallari */
+  font-size: 40px !important;
+  font-weight: normal;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* rainbow gradient */
+  background: linear-gradient(90deg, #ef4444, #10b981); /* red to green */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transition: transform 0.25s ease;
+}

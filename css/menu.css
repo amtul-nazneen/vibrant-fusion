@@ -198,3 +198,8 @@ body {
     height: 150px;
   }
 }
+.price.single-size {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 6px;
+}
