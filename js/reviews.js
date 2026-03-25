@@ -10,21 +10,6 @@ fetch("./data/reviews.json")
     .filter(r => r.rating === 5)
     .slice(0,6);
 
-  /*reviews.forEach(r => {
-
-    const card = document.createElement("div");
-
-    card.className = "review-card";
-
-    card.innerHTML = `
-      <div class="review-stars">★★★★★</div>
-      <div class="review-text">${r.review}</div>
-      <div class="review-name">— ${r.name}</div>
-    `;
-
-    track.appendChild(card);
-
-  });*/
   const GOOGLE_REVIEWS_URL = "https://search.google.com/local/reviews?placeid=ChIJ-Q8ORmGpD4gRzUSldM9u1Vg";
 
 reviews.forEach(r => {
@@ -61,7 +46,8 @@ reviews.forEach(r => {
 
   card.innerHTML = `
     <div class="review-stars">★★★★★</div>
-    <div class="review-name">— ${r.name}</div>
+    <div class="review-name">
+    <img src = "images/google-icon.svg" class="google-icon-small" alt="Google">— ${r.name}</div>
   `;
 
   // Insert text between stars and name

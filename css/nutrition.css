@@ -1,0 +1,326 @@
+
+/* Quick CSS for modal - only used in index.html now */
+.nutrition-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.nutrition-modal.hidden { display: none; }
+.nutrition-modal-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+}
+.nutrition-modal-content .close-modal {
+  float: right;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+.nutrition-variants button.selected { font-weight: bold; }
+
+
+.view-nutrition-btn,
+.view-nutrition-btn-item {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #555;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+
+/* .view-nutrition-btn:hover,
+.view-nutrition-btn-item:hover {
+  background: #f7f7f7;
+  border-color: #ccc;
+} */
+
+.view-nutrition-btn .icon,
+.view-nutrition-btn-item .icon {
+  font-size: 14px;
+  color: #ff6b6b;
+}
+
+.nutrition-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.nutrition-modal.hidden {
+  display: none;
+}
+
+.nutrition-modal-content {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  width: 90%;
+  max-width: 380px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: fadeInScale 0.2s ease;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close-modal {
+  background: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  float: right;
+}
+
+.close-modal:hover {
+  background: #ff6b6b;
+  color: #fff;
+}
+.nutrition-info {
+  margin-top: 12px;
+}
+
+.nutrition-chip {
+  display: inline-block;
+  background: #f3f3f3;
+  padding: 6px 10px;
+  border-radius: 12px;
+  margin: 4px 6px 0 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.nutrition-variants button {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 6px 12px;
+  margin-right: 6px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nutrition-variants button.selected {
+  background: #ff6b6b;
+  color: #fff;
+  border-color: #ff6b6b;
+}
+
+@media (max-width: 768px) {
+  .nutrition-modal {
+    align-items: flex-end;
+  }
+
+  .nutrition-modal-content {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 16px 16px 0 0;
+    animation: slideUp 0.25s ease;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+}
+
+.nutrition-variants button:hover {
+  transform: scale(1.05);
+}
+
+.view-nutrition-btn {
+  margin-top: 0; /* remove extra spacing */
+}
+
+.view-nutrition-btn,
+.view-nutrition-btn-item {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #444;
+  transition: all 0.2s ease;
+  margin-top: 0;
+
+  /* ✨ NEW */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* .view-nutrition-btn:hover,
+.view-nutrition-btn-item:hover {
+  background: #fff;
+  border-color: #ff6b6b;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+} */
+
+.view-nutrition-btn .icon,
+.view-nutrition-btn-item .icon {
+  font-size: 14px;
+  color: #ff6b6b;
+}
+
+.view-nutrition-btn span:last-child,
+.view-nutrition-btn-item span:last-child {
+  font-weight: 500;
+}
+
+
+/* Container adjustments if needed */
+.card-footer {
+  display: flex;
+  align-items: center;  /* vertically align price, icon, button */
+  gap: 6px;             /* space between price, icon, order button */
+}
+
+/* Nutrition button styling */
+.view-nutrition-btn-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;      /* or card accent color */
+  border: 1px solid #ccc;
+  border-radius: 50%;          /* circular icon */
+  width: 32px;
+  height: 32px;
+  font-size: 16px;             /* emoji + i */
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+/* Hover / tap feedback */
+.view-nutrition-btn-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Optional tooltip for desktop */
+.view-nutrition-btn-item::after {
+  content: 'View nutrition info';
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-150%);
+  transition: opacity 0.2s;
+}
+
+.view-nutrition-btn-item:hover::after {
+  opacity: 1;
+}
+
+/* Footer layout */
+.card-footer {
+  display: flex;
+  align-items: center;  /* vertical alignment */
+  gap: 6px;             /* spacing between price, button, order */
+}
+
+/* Rounded square button */
+.view-nutrition-btn-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;      /* or card accent color */
+  border: 1px solid #ccc;
+  border-radius: 8px;          /* slightly rounded corners */
+  width: 40px;                 /* wider than circle */
+  height: 40px;                /* square shape */
+  font-size: 16px;             /* emoji + i */
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+
+/* Hover / tap feedback */
+.view-nutrition-btn-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Optional tooltip for desktop */
+.view-nutrition-btn-item::after {
+  content: 'View nutrition info';
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-150%);
+  transition: opacity 0.2s;
+}
+
+.view-nutrition-btn-item:hover::after {
+  opacity: 1;
+}
+
+
+.view-nutrition-btn-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #FF7EB3, #FFD6A5, #FF4E50); /* Pink → Peach → Red */
+  border: none; /* remove old border for cleaner look */
+  border-radius: 8px; /* rounded square */
+  width: 40px;
+  height: 40px;
+  font-size: 16px; /* fits 🥗ⓘ */
+  color: white; /* emoji/i contrast */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+/* Hover / tap effect */
+.view-nutrition-btn-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  /*filter: brightness(1.1);  slightly brighter on hover */
+}

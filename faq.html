@@ -3,167 +3,160 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu | Vibrant Fusion</title>
+<title>FAQ | Vibrant Fusion</title>
 <link rel="stylesheet" href="css/styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <!-- Font Awesome for social icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pVtXn1Y7ERX5ax0lUuVcx2D3J0qFhZ2N8Xh6Xk1Sl/NxZ2J6ZoHtVkOmmPk/1dj+1K0pKxqGhzW5NeXjF1Q5Mw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 
-      <header class="navbar">
-        <div class="nav-container">
-          <div class="logo">
-            <a href="index.html">
-              <img src="images/vflogo.jpeg" alt="Vibrant Fusion Logo" class="logo-img">
-              Vibrant Fusion
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/vflogo.jpeg" alt="Vibrant Fusion Logo" class="logo-img">
+          Vibrant Fusion
+        </a>
+      </div>
+
+      <!-- Desktop / Tablet Links -->
+      <nav class="nav-links">
+        <a href="menu.html">Menu</a>
+        <a href="location.html">Location</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <div class="order-dropdown">
+          <button class="order-btn" id="orderButton">Order Online ▾</button>
+          <div class="order-menu" id="orderMenu">
+            <a href="tel:+18477745505">📞 Pickup (Call)</a>
+            <a href="https://www.doordash.com/">
+              <img src="images/dd-logo.svg" class="platform-logo"> Order on DoorDash
+            </a>
+            <a href="https://www.grubhub.com/">
+              <img src="images/gh-logo.svg" class="platform-logo"> Order on Grubhub
             </a>
           </div>
+        </div>
+      </nav>
 
-          <!-- Desktop / Tablet Links -->
-          <nav class="nav-links">
-            <a href="menu.html">Menu</a>
-            <a href="location.html">Location</a>
-            <a href="about.html">About</a>
-            <div class="order-dropdown">
-              <button class="order-btn" id="orderButton">Order Online ▾</button>
-              <div class="order-menu" id="orderMenu">
-                <a href="tel:+16305551234">📞 Pickup (Call)</a>
-                <a href="https://www.doordash.com/">
-                  <img src="images/dd-logo.svg" class="platform-logo"> Order on DoorDash
-                </a>
-                <a href="https://www.grubhub.com/">
-                  <img src="images/gh-logo.svg" class="platform-logo"> Order on Grubhub
-                </a>
-              </div>
-            </div>
-          </nav>
-
-          <div class="mobile-navbar-buttons">
-            <a href="menu.html" class="menu-mobile">Menu</a>
-            <div class="order-dropdown">
-              <button class="order-btn order-btn-mobile">Order Online ▾</button>
-              <div class="order-menu" id="orderMenuMobile">
-                <a href="tel:+16305551234">📞 Pickup (Call)</a>
-                <a href="https://www.doordash.com/">
-                  <img src="images/dd-logo.svg" class="platform-logo"> Order on DoorDash
-                </a>
-                <a href="https://www.grubhub.com/">
-                  <img src="images/gh-logo.svg" class="platform-logo"> Order on Grubhub
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Mobile Hamburger -->
-          <div class="hamburger" id="hamburger">
-            ☰
+      <div class="mobile-navbar-buttons">
+        <a href="menu.html" class="menu-mobile">Menu</a>
+        <div class="order-dropdown">
+          <button class="order-btn order-btn-mobile">Order Online ▾</button>
+          <div class="order-menu" id="orderMenuMobile">
+            <a href="tel:+16305551234">📞 Pickup (Call)</a>
+            <a href="https://www.doordash.com/">
+              <img src="images/dd-logo.svg" class="platform-logo"> Order on DoorDash
+            </a>
+            <a href="https://www.grubhub.com/">
+              <img src="images/gh-logo.svg" class="platform-logo"> Order on Grubhub
+            </a>
           </div>
         </div>
+      </div>
 
-        <!-- Mobile Menu -->
-        <div class="mobile-menu" id="mobileMenu">
-          <a href="location.html">Location</a>
-          <a href="about.html">About</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </header>
+      <!-- Mobile Hamburger -->
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+    </div>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="location.html">Location</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
 
+    <div class="faq-item">
+      <h3>What are your operating hours?</h3>
+      <p>We’re open Thursday–Tuesday from 8 AM–4 PM (Saturday & Sunday 9 AM–3 PM) and closed on Monday.</p>
+    </div>
 
-      <section class="faq-section">
-        <h1>Frequently Asked Questions</h1>
+    <div class="faq-item">
+      <h3>Do you offer vegan or gluten-free options?</h3>
+      <p>Yes! Most of our bowls and smoothies can be customized to be vegan or gluten-free. Just ask our team!</p>
+    </div>
 
-        <div class="faq-item">
-          <h3>What are your operating hours?</h3>
-          <p>We’re open Thursday–Tuesday from 8 AM–4 PM (Saturday & Sunday 9 AM–3 PM) and closed on Monday.</p>
-        </div>
+    <div class="faq-item">
+      <h3>Can I place an order online?</h3>
+      <p>Absolutely! You can order directly from our website or visit popular delivery platforms. For large party orders, contact us directly.</p>
+    </div>
 
-        <div class="faq-item">
-          <h3>Do you offer vegan or gluten-free options?</h3>
-          <p>Yes! Most of our bowls and smoothies can be customized to be vegan or gluten-free. Just ask our team!</p>
-        </div>
+    <div class="faq-item">
+      <h3>Do you offer party or catering services?</h3>
+      <p>Yes, we do! Vibrant Fusion can cater for birthdays, events, and gatherings. Reach out via our <a href="contact.html">Contact page</a> to plan your order.</p>
+    </div>
 
-        <div class="faq-item">
-          <h3>Can I place an order online?</h3>
-          <p>Absolutely! You can order directly from our website or visit popular delivery platforms. For large party orders, contact us directly.</p>
-        </div>
+    <div class="faq-item">
+      <h3>Where are you located?</h3>
+      <p>We’re at 1175 Barrington Rd. Hoffman Estates, IL 60169. <a href="location.html">View our location</a> to get directions easily.</p>
+    </div>
 
-        <div class="faq-item">
-          <h3>Do you offer party or catering services?</h3>
-          <p>Yes, we do! Vibrant Fusion can cater for birthdays, events, and gatherings. Reach out via our <a href="contact.html">Contact page</a> to plan your order.</p>
-        </div>
+    <div class="faq-links">
+      <p>Have more questions? <a href="contact.html">Contact us</a> or <a href="location.html">visit our store</a>!</p>
+    </div>
+  </section>
 
-        <div class="faq-item">
-          <h3>Where are you located?</h3>
-          <p>We’re at 1175 Barrington Rd. Hoffman Estates, IL 60169. <a href="location.html">View our location</a> to get directions easily.</p>
-        </div>
+  <script>
+    // Simple toggle for FAQ
+    document.querySelectorAll('.faq-item h3').forEach(item => {
+      item.addEventListener('click', () => {
+        item.parentElement.classList.toggle('open');
+      });
+    });
+  </script>
 
-        <div class="faq-links">
-          <p>Have more questions? <a href="contact.html">Contact us</a> or <a href="location.html">visit our store</a>!</p>
-        </div>
-      </section>
+  <section class="follow-us-block">
 
-      <script>
-        // Simple toggle for FAQ
-        document.querySelectorAll('.faq-item h3').forEach(item => {
-          item.addEventListener('click', () => {
-            item.parentElement.classList.toggle('open');
-          });
-        });
-      </script>
+  <h3>Follow Us!</h3>
 
+  <div class="social-icons">
 
-<!-- SOCIAL SECTION -->
-
-<section class="follow-us-block">
-
-<h3>Follow Us!</h3>
-
-<div class="social-icons">
-
-<a href="https://www.instagram.com/vibrantfusion" target="_blank" class="instagram">
-<img src="images/instagram.svg" alt="Instagram">
-</a>
-
-<a href="https://www.facebook.com/vibrantfusion1" target="_blank" class="tiktok">
-<img src="images/tiktok.svg" alt="TikTok">
-</a>
-
-<a href="https://www.tiktok.com/@vibrant_fusion" target="_blank" class="facebook">
-<img src="images/facebook.svg" alt="Facebook">
-</a>
-
-</div>
-
-</section>
-
-<section class="review-cta">
-  <h3>Love our bowls? ❤️</h3>
-  <p>
-    If you enjoyed your visit, we'd love to hear your feedback.
-    Your review helps others discover Vibrant Fusion.
-  </p>
-  <a href="https://g.page/r/Cc1EpXTPbtVYEAE/review"
-     target="_blank"
-     class="review-cta-button">
-    Leave a Google Review
+  <a href="https://www.instagram.com/vibrantfusion" target="_blank" class="instagram">
+  <img src="images/instagram.svg" alt="Instagram">
   </a>
-</section>
 
+  <a href="https://www.facebook.com/vibrantfusion1" target="_blank" class="tiktok">
+  <img src="images/tiktok.svg" alt="TikTok">
+  </a>
 
-<footer class="footer-bar">
-  <div class="footer-container">
-    <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-    <a href="gallery.html">Gallery</a>
+  <a href="https://www.tiktok.com/@vibrant_fusion" target="_blank" class="facebook">
+  <img src="images/facebook.svg" alt="Facebook">
+  </a>
+
   </div>
-</footer>
-<script src="js/script.js"></script>
 
-</body>
-</html>
+  </section>
+  <section class="review-cta">
+    <h3>Love our bowls? ❤️</h3>
+    <p>
+      If you enjoyed your visit, we'd love to hear your feedback.
+      Your review helps others discover Vibrant Fusion.
+    </p>
+    <a href="https://g.page/r/Cc1EpXTPbtVYEAE/review"
+       target="_blank"
+       class="review-cta-button">
+      Leave a Google Review
+    </a>
+  </section>
+  <footer class="footer-bar">
+    <div class="footer-container">
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+
+  </body>
+  </html>

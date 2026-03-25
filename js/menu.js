@@ -1,11 +1,6 @@
 // ===== GLOBAL VARIABLES =====
  let menuData = null;
-// const navbar = document.getElementById('navbar');
-// const categoryBar = document.getElementById('categoryBar');
-// const navbarHeight = navbar ? navbar.offsetHeight : 0;
-//
-// // Apply CSS variable for sticky positioning
-// categoryBar.style.setProperty('--navbar-height', navbarHeight + 'px');
+
 window.addEventListener('DOMContentLoaded', () => {
   const navbar = document.querySelector('.navbar'); // <-- your header
   const categoryBar = document.getElementById('categoryBar');
@@ -31,25 +26,6 @@ fetch("../data/menu.json")//important
     setupCategoryHighlight();
   });
 
-// ===== ACTIVE CATEGORY HIGHLIGHT ON SCROLL =====
-// function setupCategoryHighlight() {
-//   const categoryLinks = document.querySelectorAll('.category-bar a');
-//
-//   window.addEventListener('scroll', () => {
-//     const scrollPos = window.scrollY + navbarHeight + categoryBar.offsetHeight + 5;
-//
-//     menuData.menu.forEach(category => {
-//       const sectionId = category.category.replace(/\s+/g, '-').toLowerCase();
-//       const section = document.getElementById(sectionId);
-//       const link = document.querySelector(`.category-bar a[href="#${sectionId}"]`);
-//
-//       if (section.offsetTop <= scrollPos && (section.offsetTop + section.offsetHeight) > scrollPos) {
-//         categoryLinks.forEach(l => l.classList.remove('active'));
-//         link.classList.add('active');
-//       }
-//     });
-//   });
-// }
 function setupCategoryHighlight() {
 
   window.addEventListener('scroll', () => {
@@ -105,12 +81,18 @@ categoryBar.scrollTo({
 
 // ===== RENDER MENU =====
 function renderMenu(data) {
+
   const menuContainer = document.getElementById("menuContainer");
   const categoryBarHeight = categoryBar.offsetHeight;
 
   data.menu.forEach(category => {
-    const categoryId = category.category.replace(/\s+/g, '-').toLowerCase();
 
+    //const categoryId = category.category.replace(/\s+/g, '-').toLowerCase();
+    const categoryId = category.category
+  .toLowerCase()
+  .replace(/[^a-z0-9]+/g, '-')   // replace EVERYTHING non-alphanumeric
+  .replace(/(^-|-$)/g, '');      // remove leading/trailing dashes
+const showImage = category.showImage !== false;//catImg
     // ---- CATEGORY NAV ----
     const nav = document.createElement("a");
     nav.href = "#" + categoryId;
@@ -124,6 +106,12 @@ function renderMenu(data) {
 
     section.innerHTML = `
       <h2 class="category-title">${category.icon} ${category.category}</h2>
+      <!-- Add this only if nutritionType is category -->
+  ${category.nutritionType === 'category' ? `<button class="view-nutrition-btn">
+  <span class="icon">ⓘ</span>
+  <span>Nutrition</span>
+</button>` : ''}
+
       <div class="menu-grid"></div>
     `;
 
@@ -137,30 +125,10 @@ function renderMenu(data) {
     items.forEach(item => {
       const card = document.createElement("div");
       card.className = "menu-card";
-
+      if (!showImage) {
+        card.classList.add("no-image");
+      }//cardImg
       // ---- PRICE HTML ----
-      /*let priceHTML = "";
-      if (typeof item.price === "object") {
-        const sizes = Object.keys(item.price);
-        let selectedSize = sizes[0];
-
-        const sizeButtons = sizes.map(size => `
-          <button class="size-pill ${size === selectedSize ? 'selected' : ''}" data-size="${size}">
-            ${size}
-          </button>
-        `).join('');
-
-        const priceId = `price-${item.name.replace(/\s+/g, '-')}`;
-
-        priceHTML = `
-          <div class="size-prices-container">
-            ${sizeButtons}
-            <div class="price" id="${priceId}">$${item.price[selectedSize].toFixed(2)}</div>
-          </div>
-        `;
-      } else {
-        priceHTML = `<div class="price">$${item.price.toFixed(2)}</div>`;
-      }*/
       let priceHTML = "";
 
   // ✅ CASE 1: price is a NUMBER
@@ -212,7 +180,7 @@ function renderMenu(data) {
       const popularBadge = item.popularity === 1 ? `<div class="popular-badge">🔥 Popular</div>` : "";
 
       // ---- CARD HTML ----
-      card.innerHTML = `
+      /*card.innerHTML = `
         <div class="image-container" style="position: relative;">
           ${popularBadge}
           <img src="${item.image}" alt="${item.name}" loading="lazy">
@@ -222,7 +190,74 @@ function renderMenu(data) {
           <div class="description">${item.description}</div>
           ${priceHTML}
         </div>
-      `;
+      `;*/
+
+      /*let imageHTML = "";
+
+// ✅ Only render image if category allows AND image exists
+if (showImage && item.image) {
+  imageHTML = `
+    <div class="image-container" style="position: relative;">
+      ${popularBadge}
+      <img src="${item.image}" alt="${item.name}" loading="lazy">
+    </div>
+  `;
+}*/
+/*let imageHTML = "";
+
+if (showImage) {
+  imageHTML = `
+    <div class="image-container" style="position: relative;">
+      ${popularBadge}
+      ${
+        item.image
+          ? `<img src="${item.image}" alt="${item.name}" loading="lazy">`
+          : `<div class="image-placeholder">${category.icon}</div>`
+      }
+    </div>
+  `;
+}*/
+let imageHTML = "";
+
+if (showImage) {
+  imageHTML = `
+    <div class="image-container">
+      ${popularBadge}
+      ${item.image
+        ? `<img src="${item.image}" alt="${item.name}" loading="lazy">`
+        : `<div class="image-placeholder">${category.icon}</div>`
+      }
+    </div>
+  `;
+}
+
+// ✅ If images are OFF, still show popular badge inside content
+let titleHTML = `
+  <div class="item-title">
+    ${item.name}
+    ${!showImage && item.popularity === 1 ? `<span class="popular">🔥 Popular</span>` : ""}
+  </div>
+`;
+
+card.innerHTML = `
+  ${imageHTML}
+  <div class="card-content">
+    ${titleHTML}
+    <div class="description">${item.description}</div>
+    ${priceHTML}
+  </div>
+`;//cardImg
+if (category.nutritionType === 'item' && item.nutrition) {
+  const nutBtn = document.createElement('button');
+  nutBtn.className = 'view-nutrition-btn-item';
+//  nutBtn.textContent = 'View Nutrition ⓘ';
+nutBtn.innerHTML = `
+  <span class="icon">ⓘ</span>
+  <span>Nutrition</span>
+`;
+  nutBtn.addEventListener('click', () => openNutritionModalItem(item));
+  card.querySelector('.card-content').appendChild(nutBtn);
+}
 
       // ---- SIZE BUTTON EVENTS ----
       if (typeof item.price === "object") {
@@ -239,25 +274,6 @@ function renderMenu(data) {
 
       grid.appendChild(card);
     });
-
-    // ---- SMOOTH SCROLL ON CATEGORY CLICK ----
-    // ---- SMOOTH SCROLL ON CATEGORY CLICK ----
-    // nav.addEventListener('click', e => {
-    //   e.preventDefault();
-    //
-    //   const target = document.querySelector(nav.getAttribute('href'));
-    //
-    //   // Recalculate heights at click time
-    //   const navbar = document.querySelector('.navbar');
-    //   const navbarHeight = navbar ? navbar.offsetHeight : 0;
-    //
-    //   const categoryBar = document.getElementById('categoryBar');
-    //   const categoryBarHeight = categoryBar ? categoryBar.offsetHeight : 0;
-    //
-    //   const top = target.getBoundingClientRect().top + window.scrollY - navbarHeight - categoryBarHeight;
-    //
-    //   window.scrollTo({ top, behavior: 'smooth' });
-    // });
 
     nav.addEventListener('click', e => {
   e.preventDefault();
@@ -286,4 +302,132 @@ function renderMenu(data) {
   });
 });
   });
+
+  document.querySelectorAll('.view-nutrition-btn').forEach(btn => {
+    btn.addEventListener('click', e => {
+      const section = btn.closest('.category-section');
+      const categoryId = section.id;
+      const categoryData = menuData.menu.find(c =>
+        c.category.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'') === categoryId
+      );
+
+      openNutritionModal(categoryData);
+    });
+  });
+
+}
+
+function openNutritionModal(category) {
+  const modal = document.getElementById('nutrition-modal');
+  const container = modal.querySelector('.nutrition-variants');
+  container.innerHTML = '';
+  const title = document.createElement('div');
+  title.className = 'nutrition-title';
+  title.textContent = category.category;
+
+  container.appendChild(title);
+  // 🔹 Create variant buttons container
+  const btnContainer = document.createElement('div');
+
+  // 🔹 Create ONE nutrition display area
+  const infoDiv = document.createElement('div');
+  infoDiv.className = 'nutrition-info';
+
+  if (category.variants) {
+    category.variants.forEach((v, idx) => {
+      const btn = document.createElement('button');
+      btn.textContent = v.label;
+
+      if (idx === 0) btn.classList.add('selected');
+
+      btn.addEventListener('click', () => {
+        // remove selected from all
+        btnContainer.querySelectorAll('button').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+
+        // ✅ update nutrition display
+        infoDiv.innerHTML = `
+          <span class="nutrition-chip">🔥 ${v.nutrition.calories} kcal</span>
+          <span class="nutrition-chip">🍞 ${v.nutrition.carbs}g carbs</span>
+          <span class="nutrition-chip">💪 ${v.nutrition.protein}g protein</span>
+        `;
+      });
+
+      btnContainer.appendChild(btn);
+    });
+
+    // ✅ Set default (first variant)
+    const first = category.variants[0];
+    infoDiv.innerHTML = `
+      <span class="nutrition-chip">🔥 ${first.nutrition.calories} kcal</span>
+      <span class="nutrition-chip">🍞 ${first.nutrition.carbs}g carbs</span>
+      <span class="nutrition-chip">💪 ${first.nutrition.protein}g protein</span>
+    `;
+
+    container.appendChild(btnContainer);
+    container.appendChild(infoDiv);
+  }else if (category.nutrition) {
+  const infoDiv = document.createElement('div');
+  infoDiv.className = 'nutrition-info';
+
+  infoDiv.innerHTML = `
+    <span class="nutrition-chip">🔥 ${category.nutrition.calories} kcal</span>
+    <span class="nutrition-chip">🍞 ${category.nutrition.carbs}g carbs</span>
+    <span class="nutrition-chip">💪 ${category.nutrition.protein}g protein</span>
+  `;
+
+  container.appendChild(infoDiv);
+}
+
+  // 🔹 Show modal
+  modal.classList.remove('hidden');
+
+  modal.querySelector('.close-modal').onclick = () => {
+    modal.classList.add('hidden');
+  };
+}
+function openNutritionModalItemOld(item) {
+  const modal = document.getElementById('nutrition-modal');
+  const container = modal.querySelector('.nutrition-variants');
+  container.innerHTML = '';
+
+  const infoDiv = document.createElement('div');
+  infoDiv.className = 'nutrition-info';
+  infoDiv.textContent = `🔥 ${item.nutrition.calories} kcal • 🍞 ${item.nutrition.carbs}g carbs • 💪 ${item.nutrition.protein}g protein`;
+  container.appendChild(infoDiv);
+
+  modal.classList.remove('hidden');
+
+  modal.querySelector('.close-modal').onclick = () => modal.classList.add('hidden');
+}
+
+
+function openNutritionModalItem(item) {
+  const modal = document.getElementById('nutrition-modal');
+  const container = modal.querySelector('.nutrition-variants');
+  container.innerHTML = '';
+
+  // 🔹 Title (BIG UX improvement)
+  const title = document.createElement('div');
+  title.className = 'nutrition-title';
+  title.textContent = item.name;
+
+  // 🔹 Nutrition chips
+  const infoDiv = document.createElement('div');
+  infoDiv.className = 'nutrition-info';
+
+  infoDiv.innerHTML = `
+    <span class="nutrition-chip">🔥 ${item.nutrition.calories} kcal</span>
+    <span class="nutrition-chip">🍞 ${item.nutrition.carbs}g carbs</span>
+    <span class="nutrition-chip">💪 ${item.nutrition.protein}g protein</span>
+  `;
+
+  container.appendChild(title);
+  container.appendChild(infoDiv);
+
+  modal.classList.remove('hidden');
+
+  modal.querySelector('.close-modal').onclick = () => {
+    modal.classList.add('hidden');
+  };
 }

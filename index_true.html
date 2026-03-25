@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vibrant Fusion</title>
+<title>Home | Vibrant Fusion</title>
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/nutrition.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pVtXn1Y7ERX5ax0lUuVcx2D3J0qFhZ2N8Xh6Xk1Sl/NxZ2J6ZoHtVkOmmPk/1dj+1K0pKxqGhzW5NeXjF1Q5Mw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
 </head>
@@ -28,10 +29,11 @@
       <a href="menu.html">Menu</a>
       <a href="location.html">Location</a>
       <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
       <div class="order-dropdown">
         <button class="order-btn" id="orderButton">Order Online ▾</button>
         <div class="order-menu" id="orderMenu">
-          <a href="tel:+16305551234">📞 Pickup (Call)</a>
+          <a href="tel:+18477745505">📞 Pickup (Call)</a>
           <a href="https://www.doordash.com/">
             <img src="images/dd-logo.svg" class="platform-logo"> Order on DoorDash
           </a>
@@ -99,7 +101,7 @@
       <div class="badge-stars">★★★★★</div>
       <div class="badge-text">
         <span id="badge-rating">4.9</span> Google Rating •
-        <span id="badge-count">294</span> Happy Customers
+        <span id="badge-count">300</span> Happy Customers
       </div>
 
     </a>
@@ -135,49 +137,104 @@
 </section>
 
 <section class="featured-section">
-  <h2>Customer Favorites</h2>
-   <p>Our most loved bowls, shakes and smoothies</p>
+  <h2 class="all-titles">Customer Favorites</h2>
+  <p>Our most loved bowls, shakes and smoothies</p>
 
-  <div class="featured-grid">
+  <div class="featured-slider">
 
-    <div class="card">
-      <span class="badge popular">Most Popular</span>
-      <img src="../menu_images/bowls/StrawberryBananaBowl.jpeg" alt="Strawberry Banana Bowl">
-      <h3>Strawberry Banana Bowl</h3>
-      <p>Banana & Strawberry with plant-based protein. Topped with granola, shaved almonds, coconut flakes, strawberries, banana and honey.</p>
-      <div class="card-footer">
-        <span>$12.49</span>
-        <a href="menu.html" class="order-btn">Order</a>
+    <button class="slider-btn prev" id="prevBtn">‹</button>
+
+    <div class="featured-track" id="featuredTrack">
+
+      <div class="card">
+        <span class="badge popular">Most Popular</span>
+        <img src="../menu_images/bowls/PbChocoBananaBowl.jpeg">
+        <h3 class="all-titles">Pb Choco Banana Bowl</h3>
+        <p>Banana, peanut powder, plant-based protein.</p>
+        <div class="card-footer">
+          <span>$12.49</span>
+          <button class="view-nutrition-btn-item"
+          data-calories="420"
+          data-carbs="60g"
+          data-protein="20g">ⓘ</button>
+          <a href="menu.html" class="order-btn">Order</a>
+        </div>
       </div>
+
+      <div class="card">
+        <span class="badge protein">Trending</span>
+        <img src="../menu_images/smoothies/BerryBlast.jpeg">
+        <h3 class="all-titles">Berry Blast</h3>
+        <p>Blueberries, banana, dates, almond butter almond milk.</p>
+        <div class="card-footer">
+          <span>$9.99</span>
+          <button class="view-nutrition-btn-item"
+          data-calories="420"
+          data-carbs="60g"
+          data-protein="20g">ⓘ</button>
+          <a href="menu.html" class="order-btn">Order</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge trending">Classic</span>
+        <img src="../menu_images/proteinShakes/StrawberryBanana.jpeg">
+        <h3 class="all-titles">Strawberry Banana Protein Shake</h3>
+        <p>Classic Strawberry and banana.</p>
+        <div class="card-footer">
+          <span>$9.99</span>
+          <button class="view-nutrition-btn-item"
+          data-calories="420"
+          data-carbs="60g"
+          data-protein="20g">ⓘ</button>
+          <a href="menu.html" class="order-btn">Order</a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <span class="badge trending">High Protein</span>
+        <img src="../menu_images/powerBreakfast/ProteinOats.webp">
+        <h3 class="all-titles">Protein Oats</h3>
+        <p>Apple fiber, cinnamon, protein, topped with granola, berries.</p>
+        <div class="card-footer">
+          <span>$9.99</span>
+          <button class="view-nutrition-btn-item"
+          data-calories="420"
+          data-carbs="60g"
+          data-protein="20g">ⓘ</button>
+          <a href="menu.html" class="order-btn">Order</a>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card">
+        <span class="badge trending">Energy Boost</span>
+        <img src="../menu_images/powerBreakfast/ProteinDonuts.jpeg">
+        <h3 class="all-titles">Protein Donuts</h3>
+        <p>Caramel Apple Cheesecake, Mocha, Red Velvet, Blueberry flavors.</p>
+        <div class="card-footer">
+          <span>$4.95</span>
+          <button class="view-nutrition-btn-item"
+          data-calories="420"
+          data-carbs="60g"
+          data-protein="20g">ⓘ</button>
+          <a href="menu.html" class="order-btn">Order</a>
+        </div>
+      </div>
+
+
     </div>
 
-    <div class="card">
-      <span class="badge protein">High Protein</span>
-      <img src="../menu_images/proteinShakes/CookiesCream.jpeg" alt="Cookies & Cream">
-      <h3>Cookies & Cream</h3>
-      <p>Vanilla protein blended with chocolate cookies for a creamy, indulgent, high-protein shake.</p>
-      <div class="card-footer">
-        <span>$9.99</span>
-        <a href="menu.html" class="order-btn">Order</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <span class="badge trending">Trending</span>
-      <img src="../menu_images/smoothies/BerryBlast.jpeg" alt="Berry Blast">
-      <h3>Berry Blast</h3>
-      <p>Blueberries, banana, dates, almond butter, and almond milk for a creamy, naturally sweet smoothie.</p>
-      <div class="card-footer">
-        <span>$9.99</span>
-        <a href="menu.html" class="order-btn">Order</a>
-      </div>
-    </div>
+    <button class="slider-btn next" id="nextBtn">›</button>
 
   </div>
 </section>
-
 <section class="reviews-section">
-  <h2>What Our Customers Say</h2>
+  <h2 class="all-titles">What Our Customers Say</h2>
 
   <div class="reviews-slider">
 
@@ -192,7 +249,7 @@
 </section>
 
 <section class="visit-section">
-  <h2>Visit Us</h2>
+  <h2 class="all-titles">Visit Us</h2>
 <div class="visit-container">
 
 
@@ -242,7 +299,7 @@ target="_blank">
 
 
 <!-- RIGHT SIDE MAP -->
-<!-- 
+<!--
 <div class="visit-right">
 
 <div class="map-container">
@@ -304,15 +361,20 @@ src="https://www.google.com/maps?q=place_id:ChIJ-Q8ORmGpD4gRzUSldM9u1Vg&output=e
   </a>
 </section>
 
-
+<div id="nutrition-modal" class="nutrition-modal hidden">
+  <div class="nutrition-modal-content">
+    <button class="close-modal">✕</button>
+    <div class="nutrition-variants"></div>
+  </div>
+</div>
 <footer class="footer-bar">
   <div class="footer-container">
     <a href="faq.html">FAQ</a>
     <a href="contact.html">Contact</a>
-    <a href="gallery.html">Gallery</a>
   </div>
 </footer>
 <script src="js/script.js"></script>
 <script src="js/reviews.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

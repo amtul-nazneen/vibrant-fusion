@@ -3,16 +3,92 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu | Vibrant Fusion</title>
+<title>Gallery | Vibrant Fusion</title>
+
 <link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/menu.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<!-- Font Awesome for social icons -->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pVtXn1Y7ERX5ax0lUuVcx2D3J0qFhZ2N8Xh6Xk1Sl/NxZ2J6ZoHtVkOmmPk/1dj+1K0pKxqGhzW5NeXjF1Q5Mw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+<style>
+
+/* ===== GLOBAL CONTAINER ===== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== HEADER ===== */
+.gallery-header {
+  text-align: center;
+  margin: 50px 0 30px;
+}
+
+.gallery-header h2 {
+  font-family: 'Poppins';
+  /*color: #ef4444;*/
+  font-size: 2.5rem;
+}
+
+.gallery-header p {
+  color: #555;
+  margin-top: 10px;
+}
+
+/* ===== FLEXIBLE GRID ===== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 200px; /* fallback row height */
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crops intelligently without stretching */
+  border-radius: 14px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== INSTAGRAM ===== */
+.instagram-section {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.instagram-section h2 {
+  font-family: 'Poppins';
+}
+
+.instagram-section p {
+  margin: 10px 0 20px;
+  color: #555;
+}
+
+.instagram-button {
+  display: inline-block;
+  background: #ef4444;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width: 500px) {
+  .gallery-grid {
+    grid-auto-rows: 180px; /* smaller on mobile */
+  }
+}
+
+</style>
 </head>
 <body>
 
@@ -79,52 +155,35 @@
 
 
 
-  <!-- CATEGORY NAV -->
-  <div id="categoryBar" class="category-bar"></div>
 
-  <!-- MENU -->
-  <div id="menuContainer"></div>
-<!-- </section> -->
+<div class="container">
 
+  <!-- HEADER -->
+  <section class="gallery-header">
+    <h2>Gallery</h2>
+    <p>Fresh. Colorful. Made with love 🍓🥭</p>
+  </section>
 
-<!-- SOCIAL SECTION -->
+  <!-- FLEXIBLE GRID -->
+  <section class="gallery-grid">
+    <img src="gallery_images/img1.jpeg" alt="">
+    <img src="gallery_images/img2.jpeg" alt="">
+    <img src="gallery_images/img3.jpeg" alt="">
+    <img src="gallery_images/img4.jpeg" alt="">
+    <img src="gallery_images/img5.jpeg" alt="">
+    <img src="gallery_images/img6.jpeg" alt="">
+  </section>
 
-<section class="follow-us-block">
+  <!-- INSTAGRAM -->
+  <section class="instagram-section">
+    <h2>Follow Us</h2>
+<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/952ecd96191d50869bc4769a097e0ff4.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
 
-<h3>Follow Us!</h3>
-
-<div class="social-icons">
-
-<a href="https://www.instagram.com/vibrantfusion" target="_blank" class="instagram">
-<img src="images/instagram.svg" alt="Instagram">
-</a>
-
-<a href="https://www.facebook.com/vibrantfusion1" target="_blank" class="tiktok">
-<img src="images/tiktok.svg" alt="TikTok">
-</a>
-
-<a href="https://www.tiktok.com/@vibrant_fusion" target="_blank" class="facebook">
-<img src="images/facebook.svg" alt="Facebook">
-</a>
+  </section>
 
 </div>
 
-</section>
-
-<section class="review-cta">
-  <h3>Love our bowls? ❤️</h3>
-  <p>
-    If you enjoyed your visit, we'd love to hear your feedback.
-    Your review helps others discover Vibrant Fusion.
-  </p>
-  <a href="https://g.page/r/Cc1EpXTPbtVYEAE/review"
-     target="_blank"
-     class="review-cta-button">
-    Leave a Google Review
-  </a>
-</section>
-
-
+<!-- FOOTER -->
 <footer class="footer-bar">
   <div class="footer-container">
     <a href="faq.html">FAQ</a>
@@ -132,13 +191,5 @@
   </div>
 </footer>
 <script src="js/script.js"></script>
-<script src="js/menu.js"></script>
-<!-- Add this once in your HTML, e.g., near the end of body -->
-<div id="nutrition-modal" class="nutrition-modal hidden">
-  <div class="nutrition-modal-content">
-    <button class="close-modal">✕</button>
-    <div class="nutrition-variants"></div>
-  </div>
-</div>
 </body>
 </html>
