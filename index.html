@@ -1,155 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vibrant Fusion – Coming Soon</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome for Instagram icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #ff9966, #ff5e62, #ffc371);
-      background-size: 400% 400%;
-      animation: gradientShift 10s ease infinite;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    .container {
-      max-width: 650px;
-      padding: 20px;
-      animation: fadeIn 1.2s ease-in-out;
-    }
-
-    h1 {
-      font-size: 3.2rem;
-      margin-bottom: 10px;
-      font-weight: 600;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      font-weight: 300;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 1.1rem;
-      opacity: 0.9;
-    }
-
-    .emoji {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-      animation: float 3s ease-in-out infinite;
-    }
-
-    /* Instagram button */
-    .instagram {
-      margin-top: 25px;
-    }
-
-    .instagram a {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 12px 20px;
-      border-radius: 30px;
-      background: rgba(255,255,255,0.15);
-      color: #fff;
-      text-decoration: none;
-      font-size: 1rem;
-      transition: all 0.3s ease;
-      backdrop-filter: blur(8px);
-    }
-
-    .instagram a:hover {
-      background: #fff;
-      color: #ff5e62;
-      transform: translateY(-3px);
-    }
-
-    .instagram i {
-      font-size: 1.2rem;
-    }
-
-    /* floating fruit bubbles */
-    .bubble {
-      position: absolute;
-      bottom: -100px;
-      font-size: 2rem;
-      animation: rise 12s infinite ease-in;
-    }
-
-    .bubble:nth-child(1) { left: 10%; animation-duration: 10s; }
-    .bubble:nth-child(2) { left: 25%; animation-duration: 14s; }
-    .bubble:nth-child(3) { left: 50%; animation-duration: 12s; }
-    .bubble:nth-child(4) { left: 70%; animation-duration: 16s; }
-    .bubble:nth-child(5) { left: 90%; animation-duration: 11s; }
-
-    @keyframes rise {
-      0% { transform: translateY(0) scale(1); opacity: 1; }
-      100% { transform: translateY(-110vh) scale(1.5); opacity: 0; }
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-12px); }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    .logo {
-  width: 140px;
-  margin-bottom: 15px;
-  animation: fadeIn 1s ease-in-out;
-}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Vibrant Fusion</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/nutrition.css">
+<link rel="stylesheet" href="css/hero.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <!-- floating tropical elements -->
-  <div class="bubble">🥭</div>
-  <div class="bubble">🍍</div>
-  <div class="bubble">🍓</div>
-  <div class="bubble">🥥</div>
-  <div class="bubble">🍊</div>
 
-  <div class="container">
-    <img src="images/vflogo.jpeg" alt="Vibrant Fusion Logo" class="logo">
-    <div class="emoji">🌴🥤✨</div>
-    <h1>Vibrant Fusion</h1>
-    <h2>Fresh blends. Feel-good vibes</h2>
-    <p>We’re blending something bold, fresh, and unforgettable.<br/>Launching soon.</p>
-
-    <!-- Instagram link -->
-    <div class="instagram">
-      <a href="https://instagram.com/vibrantfusion" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-        Follow us on Instagram
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/vflogo.jpeg" alt="Vibrant Fusion Logo" class="logo-img">
+        Vibrant Fusion
       </a>
+    </div>
+
+    <!-- Desktop / Tablet Links -->
+    <nav class="nav-links">
+      <a href="menu.html">Menu</a>
+      <a href="location.html">Location</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <div class="order-dropdown">
+        <button class="order-btn" id="orderButton">Order Online ▾</button>
+        <div class="order-menu" id="orderMenu">
+          <a href="tel:+18477745505">📞 Pickup (Call)</a>
+          <a href="https://www.doordash.com/">
+            <img src="images/dd-logo.svg" class="platform-logo"> Order on DoorDash
+          </a>
+          <a href="https://www.grubhub.com/">
+            <img src="images/gh-logo.svg" class="platform-logo"> Order on Grubhub
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-navbar-buttons">
+      <a href="menu.html" class="menu-mobile">Menu</a>
+      <div class="order-dropdown">
+        <button class="order-btn order-btn-mobile">Order Online ▾</button>
+        <div class="order-menu" id="orderMenuMobile">
+          <a href="tel:+18477745505">📞 Pickup (Call)</a>
+          <a href="https://www.doordash.com/">
+            <img src="images/dd-logo.svg" class="platform-logo"> Order on DoorDash
+          </a>
+          <a href="https://www.grubhub.com/">
+            <img src="images/gh-logo.svg" class="platform-logo"> Order on Grubhub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger" id="hamburger">
+      ☰
     </div>
   </div>
 
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="location.html">Location</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+
+
+
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+  <div class="hero-bg">
+  <span class="glow glow-1"></span>
+  <span class="glow glow-2"></span>
+  <span class="glow glow-3"></span>
+</div>
+
+  <div class="hero-container">
+
+    <div class="hero-card">
+
+      <div class="hero-badge-top">
+        ✨ Fresh • Healthy • Crafted Daily
+      </div>
+
+      <h1>Fuel Your Day the Vibrant Way</h1>
+
+      <p>
+        Fresh smoothies, açaí bowls, and protein shakes crafted for a healthier lifestyle.
+      </p>
+
+      <div class="hero-actions">
+        <a href="menu.html" class="hero-button">
+          View Menu <span class="arrow">→</span>
+        </a>
+      </div>
+
+      <a href="https://search.google.com/local/reviews?placeid=ChIJ-Q8ORmGpD4gRzUSldM9u1Vg"
+         target="_blank"
+         class="hero-rating">
+
+        <img src="images/google-icon.svg" class="google-icon-small" alt="Google">
+
+        ★★★★★
+
+        <span class="rating-text">
+          <strong>4.9</strong> • 300+ Happy Customers
+        </span>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="features">
+  <h2 class="section-title">Why Vibrant Fusion?</h2>
+
+  <div class="feature-grid">
+
+    <div class="feature-card">
+      <div class="feature-icon">🍓</div>
+      <h3>Fresh Ingredients</h3>
+      <p>We use fresh fruits and premium ingredients to craft smoothies that taste amazing and fuel your day.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">💪</div>
+      <h3>Protein Powered</h3>
+      <p>Our smoothies and bowls are packed with protein and nutrients to keep you energized.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🌱</div>
+      <h3>Healthy & Natural</h3>
+      <p>No artificial flavors. Just real ingredients blended perfectly for a vibrant lifestyle.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="featured-section">
+  <h2 class="all-titles">Customer Favorites</h2>
+  <p>Our most loved bowls, shakes and smoothies.</p>
+
+  <div class="featured-slider">
+
+    <button class="slider-btn prev" id="prevBtn">‹</button>
+
+    <div class="featured-track" id="featuredTrack">
+
+      <div class="card">
+        <span class="badge popular">Most Popular</span>
+        <img src="../menu_images/bowls/PbChocoBananaBowl.jpeg">
+        <h3 class="all-titles">Pb Choco Banana Bowl</h3>
+        <p>Banana, peanut powder, plant-based protein.</p>
+        <div class="card-footer">
+          <span>$12.49</span>
+          <button class="view-nutrition-btn-item"
+          data-calories="420"
+          data-carbs="60g"
+          data-protein="20g">ⓘ</button>
+          <a href="menu.html" class="order-btn">Order</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge protein">Trending</span>
+        <img src="../menu_images/smoothies/BerryBlast.jpeg">
+        <h3 class="all-titles">Berry Blast</h3>
+        <p>Blueberries, banana, dates, almond butter almond milk.</p>
+        <div class="card-footer">
+          <span>$9.99</span>
+          <button class="view-nutrition-btn-item"
+          data-calories="420"
+          data-carbs="60g"
+          data-protein="20g">ⓘ</button>
+          <a href="menu.html" class="order-btn">Order</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge trending">Classic</span>
+        <img src="../menu_images/proteinShakes/StrawberryBanana.jpeg">
+        <h3 class="all-titles">Strawberry Banana Protein Shake</h3>
+        <p>Classic Strawberry and banana.</p>
+        <div class="card-footer">
+          <span>$9.99</span>
+          <button class="view-nutrition-btn-item"
+          data-calories="420"
+          data-carbs="60g"
+          data-protein="20g">ⓘ</button>
+          <a href="menu.html" class="order-btn">Order</a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <span class="badge trending">High Protein</span>
+        <img src="../menu_images/powerBreakfast/ProteinOats.webp">
+        <h3 class="all-titles">Protein Oats</h3>
+        <p>Apple fiber, cinnamon, protein, topped with granola, berries.</p>
+        <div class="card-footer">
+          <span>$9.99</span>
+          <button class="view-nutrition-btn-item"
+          data-calories="420"
+          data-carbs="60g"
+          data-protein="20g">ⓘ</button>
+          <a href="menu.html" class="order-btn">Order</a>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card">
+        <span class="badge trending">Energy Boost</span>
+        <img src="../menu_images/powerBreakfast/ProteinDonuts.jpeg">
+        <h3 class="all-titles">Protein Donuts</h3>
+        <p>Caramel Apple Cheesecake, Mocha, Red Velvet, Blueberry flavors.</p>
+        <div class="card-footer">
+          <span>$4.95</span>
+          <button class="view-nutrition-btn-item"
+          data-calories="420"
+          data-carbs="60g"
+          data-protein="20g">ⓘ</button>
+          <a href="menu.html" class="order-btn">Order</a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <button class="slider-btn next" id="nextBtn">›</button>
+
+  </div>
+</section>
+<section class="reviews-section">
+  <h2 class="all-titles">What Our Customers Say</h2>
+
+  <div class="reviews-slider">
+
+    <button class="slider-btn prev">‹</button>
+
+    <div class="reviews-track" id="reviews-track"></div>
+
+    <button class="slider-btn next">›</button>
+
+  </div>
+
+</section>
+
+<section class="visit-section">
+  <h2 class="all-titles">Visit Us</h2>
+<div class="visit-container">
+
+
+<!-- LEFT SIDE -->
+
+<div class="visit-left">
+
+<h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+
+<p class="address">
+1175 Barrington Rd.<br>
+Hoffman Estates, IL 60169
+</p>
+
+<a class="btn-primary"
+href="https://www.google.com/maps/place/?q=place_id:ChIJ-Q8ORmGpD4gRzUSldM9u1Vg"
+target="_blank">
+
+<i class="fas fa-directions"></i> Get Directions
+
+</a>
+
+
+<br><br>
+
+
+<h3><i class="fas fa-clock"></i> Store Hours</h3>
+
+<table class="hours-table">
+
+<tr><td>Monday</td><td>Closed</td></tr>
+<tr><td>Tuesday</td><td>8 AM – 4 PM</td></tr>
+<tr><td>Wednesday</td><td>8 AM – 4 PM</td></tr>
+<tr><td>Thursday</td><td>8 AM – 4 PM</td></tr>
+<tr><td>Friday</td><td>8 AM – 4 PM</td></tr>
+<tr><td>Saturday</td><td>9 AM – 3 PM</td></tr>
+<tr><td>Sunday</td><td>9 AM – 3 PM</td></tr>
+
+</table>
+<br>
+<!-- New Contact link -->
+    <p class="contact-link">
+      Have questions?
+      <a href="contact.html"><strong>Contact us!</strong></a>
+    </p>
+</div>
+
+
+<!-- RIGHT SIDE MAP -->
+
+<div class="visit-right">
+
+<div class="map-container">
+
+<iframe
+width="100%"
+height="400"
+style="border:0"
+loading="lazy"
+allowfullscreen
+src="https://www.google.com/maps?q=place_id:ChIJ-Q8ORmGpD4gRzUSldM9u1Vg&output=embed">
+</iframe>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- SOCIAL SECTION -->
+
+<section class="follow-us-block">
+
+<h3>Follow Us</h3>
+
+<div class="social-icons">
+
+<a href="https://www.instagram.com/vibrantfusion" target="_blank" class="instagram">
+<img src="images/instagram.svg" alt="Instagram">
+</a>
+
+<a href="https://www.facebook.com/vibrantfusion1" target="_blank" class="tiktok">
+<img src="images/tiktok.svg" alt="TikTok">
+</a>
+
+<a href="https://www.tiktok.com/@vibrant_fusion" target="_blank" class="facebook">
+<img src="images/facebook.svg" alt="Facebook">
+</a>
+
+</div>
+
+</section>
+
+<section class="review-cta">
+  <h3>Love our menu? ❤️</h3>
+  <p>
+    If you enjoyed your visit, we'd love to hear your feedback.
+    Your review helps others discover Vibrant Fusion.
+  </p>
+  <a href="https://g.page/r/Cc1EpXTPbtVYEAE/review"
+     target="_blank"
+     class="review-cta-button">
+    Leave a Google Review
+  </a>
+</section>
+
+<div id="nutrition-modal" class="nutrition-modal hidden">
+  <div class="nutrition-modal-content">
+    <button class="close-modal">✕</button>
+    <div class="nutrition-variants"></div>
+  </div>
+</div>
+<footer class="footer-bar">
+  <div class="footer-container">
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+<script src="js/reviews.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

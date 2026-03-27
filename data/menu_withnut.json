@@ -2,6 +2,12 @@
   "menu": [{
     "category": "Bowls",
     "icon": "🥣",
+    "nutritionType":"category",
+    "nutrition":{
+      "calories":"200-350",
+      "carbs":"25-45",
+      "protein":"10-25"
+    },
     "items": [
       {
         "name": "Acai Bowl",
@@ -64,6 +70,7 @@
 ,
 {
 "category": "Refreshers & Teas",
+"showImage": false,
 "icon": "🥤",
 "items": [
   {
@@ -73,7 +80,88 @@
       "32oz": 9.99
     },
     "image": "../menu_images/refreshersTeas/SunnyDay.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Berry Bliss",
+    "description": "Wild berry, Collagen, Protein and Caffeine",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/BerryBliss.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Captain America",
+    "description": "Watermelon, Blue Blast, Electrolytes and Caffeine",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/CaptainAmerica.jpeg",
     "popularity": 1
+  },
+  {
+    "name": "Cucumber Lemonade",
+    "description": "Probiotic, Blood Circulation support and Caffeine",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/CucumberLemonade.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Aloha Sunset",
+    "description": "Pineapple, Cherry Electrolytes and Caffeine (160mg)",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/AlohaSunset.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Digestive",
+    "description": "Fiber, Probiotic, Caffeine (160mg) and Soft Lemonade",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/Digestive.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Hot Girl Summer",
+    "description": "Watermelon, Pineapple and Mango with a hint of citrus.",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/HotGirlSummer.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Ruby Tart Splash",
+    "description": "Hibiscus tea with apple, blood orange, tangerine, organic rose hips and papaya.",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/RubyTartSplash.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Immunity",
+    "description": "Vitamin D, Zinc & Aloe Vera, Vitamin C, Caffeine (160mg) and Orange",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/Immunity.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Cherry On Top",
+    "description": "Collagen, Aloe Vera, Caffeine (160gm) Orange, Cherry",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/CherryOnTop.jpeg",
+    "popularity": 2
   },
   {
     "name": "Beach Days",
@@ -94,13 +182,22 @@
     "popularity": 2
   },
   {
+    "name": "Pink Flamingo",
+    "description": "Caffeine free, Protein, Collagen, Aloe vera, Watermelon, Pomegranate and Strawberry.",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/PinkFlamingo.jpeg",
+    "popularity": 2
+  },
+  {
     "name": "Tropical Mango",
     "description": "Fiber, Aloe Vera, Caffeine free, Protein",
     "price": {
       "32oz": 9.99
     },
     "image": "../menu_images/refreshersTeas/TropicalMango.jpeg",
-    "popularity": 1
+    "popularity": 2
   },
   {
     "name": "Black Mamba",
@@ -109,6 +206,24 @@
       "32oz": 9.99
     },
     "image": "../menu_images/refreshersTeas/BlackMamba.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Trash Can Punch",
+    "description": "Collagen, Aloe Vera, Caffeine (160mg), Watermelon and Passion fruit",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/TrashCanPunch.jpeg",
+    "popularity": 2
+  },
+  {
+    "name": "Red Fusion",
+    "description": "Vitamin C Vitamin B complex, Aloe Vera, Caffeine (160mg), Watermelon and Pomegranate",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/RedFusion.jpeg",
     "popularity": 2
   },
   {
@@ -121,6 +236,15 @@
     "popularity": 2
   },
   {
+    "name": "Pineapple Passion",
+    "description": "Electrolytes, Aloe Vera, Caffeine (85mg), Pineapple",
+    "price": {
+      "32oz": 9.99
+    },
+    "image": "../menu_images/refreshersTeas/PineapplePassion.jpeg",
+    "popularity": 1
+  },
+  {
     "name": "Orange Splash",
     "description": "Electrolytes, Aloe Vera, Caffeine (160mg), Orange",
     "price": {
@@ -128,129 +252,18 @@
     },
     "image": "../menu_images/refreshersTeas/OrangeSplash.jpeg",
     "popularity": 2
-  },
-  {
-    "name": "Berry Bliss",
-    "description": "Wild berry, Collagen, Protein and Caffeine",
-    "price": {
-      "32oz": 9.99
-    },
-    "image": "",
-    "popularity": 2
-  },
-  {
-    "name": "Captain America",
-    "description": "Watermelon, Blue Blast, Electrolytes and Caffeine",
-    "price": {
-      "32oz": 9.99
-    },
-    "image": "",
-    "popularity": 2
-  },
-  {
-    "name": "Cucumber Lemonade",
-    "description": "Probiotic, Blood Circulation support and Caffeine",
-    "price": {
-      "32oz": 9.99
-    },
-    "image": "",
-    "popularity": 2
-  },
-  {
-    "name": "Aloha Sunset",
-    "description": "Pineapple, Cherry Electrolytes and Caffeine (160mg)",
-    "price": {
-      "32oz": 9.99
-    },
-    "image": "",
-    "popularity": 2
-  },
-  {
-    "name": "Digestive",
-    "description": "Fiber, Probiotic, Caffeine (160mg) and Soft Lemonade",
-    "price": {
-      "32oz": 9.99
-    },
-    "image": "",
-    "popularity": 2
-  },
-  {
-    "name": "Hot Girl Summer",
-    "description": "Watermelon, Pineapple and Mango with a hint of citrus.",
-    "price": {
-      "32oz": 9.99
-    },
-    "image": "",
-    "popularity": 2
-  },
-  {
-    "name": "Ruby Tart Splash",
-    "description": "Hibiscus tea with apple, blood orange, tangerine, organic rose hips and papaya.",
-    "price": {
-      "32oz": 9.99
-    },
-    "image": "",
-    "popularity": 2
-  },
-  {
-    "name": "Immunity",
-    "description": "Vitamin D, Zinc & Aloe Vera, Vitamin C, Caffeine (160mg) and Orange",
-    "price": {
-      "32oz": 9.99
-    },
-    "image": "",
-    "popularity": 2
-  },
-  {
-    "name": "Cherry On Top",
-    "description": "Collagen, Aloe Vera, Caffeine (160gm) Orange, Cherry",
-    "price": {
-      "32oz": 9.99
-    },
-    "image": "",
-    "popularity": 2
-  },
-  {
-    "name": "Pink Flamingo",
-    "description": "Caffeine free, Protein, Collagen, Aloe vera, Watermelon, Pomegranate and Strawberry.",
-    "price": {
-      "32oz": 9.99
-    },
-    "image": "",
-    "popularity": 2
-  },
-  {
-    "name": "Trash Can Punch",
-    "description": "Collagen, Aloe Vera, Caffeine (160mg), Watermelon and Passion fruit",
-    "price": {
-      "32oz": 9.99
-    },
-    "image": "",
-    "popularity": 2
-  },
-  {
-    "name": "Red Fusion",
-    "description": "Vitamin C Vitamin B complex, Aloe Vera, Caffeine (160mg), Watermelon and Pomegranate",
-    "price": {
-      "32oz": 9.99
-    },
-    "image": "",
-    "popularity": 2
-  },
-  {
-    "name": "Pineapple Passion",
-    "description": "Electrolytes, Aloe Vera, Caffeine (85mg), Pineapple",
-    "price": {
-      "32oz": 9.99
-    },
-    "image": "",
-    "popularity": 2
   }
 ]
 },
 {
   "category": "Smoothies",
   "icon": "🥤",
+  "nutritionType":"category",
+  "nutrition":{
+    "calories":"200-350",
+    "carbs":"25-45",
+    "protein":"10-25"
+  },
   "items": [
     {
       "name": "Berry Blast",
@@ -264,7 +277,7 @@
       "description": "Mango and agave with almond milk.",
       "price": { "20oz": 9.99 },
       "image": "../menu_images/smoothies/MangoMagic.jpeg",
-      "popularity": 1
+      "popularity": 2
     },
     {
       "name": "Peach & Berry Delight",
@@ -327,7 +340,7 @@
       "description": "Banana, mango, and pineapple with coconut milk.",
       "price": { "20oz": 9.99 },
       "image": "",
-      "popularity": 2
+      "popularity": 1
     },
     {
       "name": "Wildberry Fusion",
@@ -341,13 +354,18 @@
 {
   "category": "Protein Shakes",
   "icon": "💪",
+  "nutritionType": "category",
+  "variants": [
+  { "label": "20 oz", "nutrition": { "calories": 210, "carbs": 18, "protein": 25 } },
+  { "label": "32 oz", "nutrition": { "calories": 320, "carbs": 28, "protein": 40 } }
+],
   "items": [
     {
       "name": "Choco Banana",
       "description": "Rich chocolate and banana.",
       "price": { "20oz": 9.99, "32oz": 11.99 },
       "image": "../menu_images/proteinShakes/ChocoBanana.jpeg",
-      "popularity": 1
+      "popularity": 2
     },
     {
       "name": "Green Paradise",
@@ -368,7 +386,7 @@
       "description": "Classic strawberry and banana.",
       "price": { "20oz": 9.99, "32oz": 11.99 },
       "image": "../menu_images/proteinShakes/StrawberryBanana.jpeg",
-      "popularity": 1
+      "popularity": 2
     },
     {
       "name": "Birthday Cake",
@@ -489,6 +507,11 @@
 "category": "Cheesecake Shakes",
 "showImage": false,
 "icon": "🍰",
+"nutritionType": "category",
+"variants": [
+{ "label": "20 oz", "nutrition": { "calories": 210, "carbs": 18, "protein": 25 } },
+{ "label": "32 oz", "nutrition": { "calories": 320, "carbs": 28, "protein": 40 } }
+],
 "items": [
   {
     "name": "Blueberry Cheesecake",
@@ -691,6 +714,7 @@
 {
   "category": "Power Breakfast",
   "icon": "🍳",
+  "nutritionType": "item",
   "items": [
     {
       "name": "Protein Oats",
@@ -705,14 +729,16 @@
       "description": "Egg white and oat protein waffles with bananas, strawberries, blueberries.",
       "price": 9.99,
       "image": "../menu_images/powerBreakfast/ProteinWaffle.webp",
-      "popularity": 2
+      "popularity": 2,
+      "nutrition": { "calories": 280, "carbs": 22, "protein": 20 }
     },
     {
       "name": "Protein Dubai Chocolate Waffles",
       "description": "Egg white and oat protein waffles with pistachio cream, strawberries.",
       "price": 9.99,
       "image": "../menu_images/powerBreakfast/ProteinDubaiChocolateWaffle.jpeg",
-      "popularity": 2
+      "popularity": 2,
+      "nutrition": { "calories": 280, "carbs": 22, "protein": 20 }
     },
 
     {
@@ -723,35 +749,40 @@
         "2pcs": 6.99
       },
       "image": "../menu_images/powerBreakfast/EggMuffin.jpeg",
-      "popularity": 1
+      "popularity": 1,
+      "nutrition": { "calories": 280, "carbs": 22, "protein": 20 }
     },
     {
       "name": "Caramel Apple Cheesecake Protein Donut",
       "description": "Almond flour donut with caramel, apple chunks with streusel topping.",
       "price": 4.95,
       "image": "../menu_images/powerBreakfast/CaramelAppleCheesecake.jpeg",
-      "popularity": 1
+      "popularity": 1,
+      "nutrition": { "calories": 280, "carbs": 22, "protein": 20 }
     },
     {
       "name": "Mocha Protein Donut",
       "description": "Chocolate and coffee-flavored almond flour donut.",
       "price": 4.95,
       "image": "../menu_images/powerBreakfast/Mocha.jpeg",
-      "popularity": 2
+      "popularity": 2,
+      "nutrition": { "calories": 280, "carbs": 22, "protein": 20 }
     },
     {
       "name": "Blueberry Protein Donut",
       "description": "Almond flour blueberry donut with cream cheese glaze.",
       "price": 4.95,
       "image": "../menu_images/powerBreakfast/Blueberry.jpeg",
-      "popularity": 2
+      "popularity": 2,
+      "nutrition": { "calories": 280, "carbs": 22, "protein": 20 }
     },
     {
       "name": "Red Velvet Protein Donut",
       "description": "Red velvet almond flour donut with cream cheese glaze.",
       "price": 4.95,
       "image": "../menu_images/powerBreakfast/RedVelvet.jpeg",
-      "popularity": 2
+      "popularity": 2,
+      "nutrition": { "calories": 280, "carbs": 22, "protein": 20 }
     },
     {
       "name": "Protein Donuts Assortment",

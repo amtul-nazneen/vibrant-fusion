@@ -211,7 +211,8 @@
 
 /* Nutrition button styling */
 .view-nutrition-btn-item {
-  display: inline-flex;
+  /*display: inline-flex;*/
+  display: none !important;
   align-items: center;
   justify-content: center;
   background-color: #fff;      /* or card accent color */
